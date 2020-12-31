@@ -1,0 +1,441 @@
+
+$color: #efeaee;
+$color-fuente:#6f7c9c;
+
+.presentacion-recomendaciones{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .presentacion-recomendaciones__titulo-principal-recomendaciones{
+        margin-left: 60px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: $color-fuente;
+    }
+    .presentacion-recomendaciones__texto-recomendaciones{
+        margin-right: 60px;
+        margin-left: 60px;
+        color: $color-fuente;
+    }
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+  box-shadow: 0 0 0 0.2rem transparent;
+  }
+
+.seccion-recomendaciones{
+    margin-bottom: 200px;
+}
+
+.seccion-recomendacion-verano-naranja{
+
+    .seccion-recomendaciones-verano-naranja__titulo-acordeon{
+        background-color:  #f6e58d;
+    }
+
+    .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones{
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones:hover{
+        color: white !important;
+    }
+
+    .seccion-recomendaciones-verano-naranja__espacio-descripcion{
+        background-color: $color;
+    }
+
+    .seccion-recomendaciones-verano-naranja__introduccion-seccion{
+        background-color: #f7eaad ;
+        color: $color-fuente;
+        margin-bottom: 40px;
+    }
+
+    .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones{
+        margin-top: 20px;
+    }
+}
+
+
+.recomendaciones-naranja{
+    background-color: #f7eaad;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "foto foto foto foto"
+    "texto texto texto texto"
+    "mas-info icono-facebook icono-instagram icono-maps";
+    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-columns: 120px 60px 60px 60px;
+    justify-content: center;
+
+    .recomendaciones-naranja__titulo-recomendaciones{
+        grid-area: titulo;
+        margin-top: 20px;
+        text-align:center;
+        justify-self: stretch;
+        color: $color-fuente;
+    }
+
+    /*fotos carousel recomendaciones*/
+    .recomendaciones-naranja__foto-recomendaciones{
+        grid-area: foto;
+        width: 290px;
+        height: 200px;
+        justify-self:center;
+    }
+    .recomendaciones-naranja__tamaño-fotos-carousel-recomendaciones{
+        width: 290px;
+        height: 200px;
+    }
+
+    .recomendaciones-naranja__texto-recomendaciones{
+        grid-area: texto;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+    .recomendaciones-naranja__icono-facebook{
+        grid-area: icono-facebook;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-naranja__icono-instagram{
+        grid-area: icono-instagram;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-naranja__icono-maps{
+        grid-area: icono-maps;
+        width: 40px;
+        height: 40px;
+        justify-self: center;
+        margin-top: 5px;
+    }
+
+    .recomendaciones-naranja__texto-masinfo{
+        grid-area: mas-info;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+}
+
+.seccion-recomendacion-cena-rojo{
+
+    .seccion-recomendacion-cena-rojo__titulo-acordeon{
+        background-color:  #ff7979;
+    }
+
+    .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones{
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones:hover{
+        color: white !important;
+    }
+
+    .seccion-recomendacion-cena-rojo__espacio-descripcion{
+        background-color: $color;
+    }
+
+    .seccion-recomendacion-cena-rojo__introduccion-seccion{
+        background-color:#f39a9a;
+        color: $color-fuente;
+        margin-bottom: 40px;
+    }
+
+    .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones{
+        margin-top: 20px;
+    }
+}
+
+.recomendaciones-rojo{
+    background-color: #f39a9a;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "foto foto foto foto"
+    "texto texto texto texto"
+    "mas-info icono-facebook icono-instagram icono-maps";
+    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-columns: 120px 60px 60px 60px;
+    justify-content: center;
+
+    .recomendaciones-rojo__titulo-recomendaciones{
+        grid-area: titulo;
+        margin-top: 20px;
+        text-align:center;
+        justify-self: stretch;
+        color: $color-fuente;
+    }
+
+    /*fotos carousel recomendaciones*/
+    .recomendaciones-rojo__foto-recomendaciones{
+        grid-area: foto;
+        width: 290px;
+        height: 200px;
+        justify-self:center;
+    }
+    .recomendaciones-rojo__tamaño-fotos-carousel-recomendaciones{
+        width: 290px;
+        height: 200px;
+    }
+
+    .recomendaciones-rojo__texto-recomendaciones{
+        grid-area: texto;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+    .recomendaciones-rojo__icono-facebook{
+        grid-area: icono-facebook;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-rojo__icono-instagram{
+        grid-area: icono-instagram;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-rojo__icono-maps{
+        grid-area: icono-maps;
+        width: 40px;
+        height: 40px;
+        justify-self: center;
+        margin-top: 5px;
+    }
+
+    .recomendaciones-rojo__texto-masinfo{
+        grid-area: mas-info;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+}
+
+
+.seccion-recomendacion-lugares-verde{
+
+    .seccion-recomendacion-lugares-verde__titulo-acordeon{
+        background-color: #badc58;
+    }
+
+    .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones{
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones:hover{
+        color: white !important;
+    }
+
+    .seccion-recomendacion-lugares-verde__espacio-descripcion{
+        background-color: $color;
+    }
+
+    .seccion-recomendacion-lugares-verde__introduccion-seccion{
+        background-color: #cbe482;
+        color: $color-fuente;
+        margin-bottom: 40px;
+    }
+
+    .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones{
+        margin-top: 20px;
+    }
+}
+
+.recomendaciones-verde{
+    background-color: #cbe482;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "foto foto foto foto"
+    "texto texto texto texto"
+    "mas-info icono-facebook icono-instagram icono-maps";
+    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-columns: 120px 60px 60px 60px;
+    justify-content: center;
+
+    .recomendaciones-verde__titulo-recomendaciones{
+        grid-area: titulo;
+        margin-top: 20px;
+        text-align:center;
+        justify-self: stretch;
+        color: $color-fuente;
+    }
+
+    /*fotos carousel recomendaciones*/
+    .recomendaciones-verde__foto-recomendaciones{
+        grid-area: foto;
+        width: 290px;
+        height: 200px;
+        justify-self:center;
+    }
+    .recomendaciones-verde__tamaño-fotos-carousel-recomendaciones{
+        width: 290px;
+        height: 200px;
+    }
+
+    .recomendaciones-verde__texto-recomendaciones{
+        grid-area: texto;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+    .recomendaciones-verde__icono-facebook{
+        grid-area: icono-facebook;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-verde__icono-instagram{
+        grid-area: icono-instagram;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-verde__icono-maps{
+        grid-area: icono-maps;
+        width: 40px;
+        height: 40px;
+        justify-self: center;
+        margin-top: 5px;
+    }
+
+    .recomendaciones-verde__texto-masinfo{
+        grid-area: mas-info;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+}
+
+
+
+.seccion-recomendacion-invierno-azul{
+
+    .seccion-recomendacion-invierno-azul__titulo-acordeon{
+        background-color:  #7ed6df;
+    }
+
+    .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones{
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones:hover{
+        color: white !important;
+    }
+
+    .seccion-recomendacion-invierno-azul__espacio-descripcion{
+        background-color: $color;
+    }
+
+    .seccion-recomendacion-invierno-azul__introduccion-seccion{
+        background-color: #9bd5db;
+        color: $color-fuente;
+        margin-bottom: 40px;
+    }
+
+    .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones{
+        margin-top: 20px;
+    }
+}
+
+.recomendaciones-azul{
+    background-color: #9bd5db;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "foto foto foto foto"
+    "texto texto texto texto"
+    "mas-info icono-facebook icono-instagram icono-maps";
+    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-columns: 120px 60px 60px 60px;
+    justify-content: center;
+
+    .recomendaciones-azul__titulo-recomendaciones{
+        grid-area: titulo;
+        margin-top: 20px;
+        text-align:center;
+        justify-self: stretch;
+        color: $color-fuente;
+    }
+
+    /*fotos carousel recomendaciones*/
+    .recomendaciones-azul__foto-recomendaciones{
+        grid-area: foto;
+        width: 290px;
+        height: 200px;
+        justify-self:center;
+    }
+    .recomendaciones-azul__tamaño-fotos-carousel-recomendaciones{
+        width: 290px;
+        height: 200px;
+    }
+
+    .recomendaciones-azul__texto-recomendaciones{
+        grid-area: texto;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+    .recomendaciones-azul__icono-facebook{
+        grid-area: icono-facebook;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-azul__icono-instagram{
+        grid-area: icono-instagram;
+        width: 30px;
+        height: 30px;
+        justify-self: center;
+        margin-top: 10px;
+
+    }
+    .recomendaciones-azul__icono-maps{
+        grid-area: icono-maps;
+        width: 40px;
+        height: 40px;
+        justify-self: center;
+        margin-top: 5px;
+    }
+
+    .recomendaciones-azul__texto-masinfo{
+        grid-area: mas-info;
+        color: $color-fuente ;
+        margin-top: 20px;
+        text-align: center;
+        justify-self: stretch;
+    }
+}

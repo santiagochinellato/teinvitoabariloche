@@ -1,0 +1,78 @@
+$color: #efeaee;
+$color-fuente:#6f7c9c;
+
+.seccion-promociones{
+    margin-bottom: 500px;
+    .seccion-promociones__titulos-promociones{
+        color: $color-fuente;
+    }
+    .seccion-promociones__texto{
+        color: $color-fuente;
+    }
+    .seccion-promociones__subtitulos-promociones{
+        color: $color-fuente;
+        margin-bottom: 50px;
+    }
+}
+
+.contenedor-promociones{
+    margin: auto;
+    .contenedor-promociones__principal{
+        margin-bottom: 50px;
+    }
+    .contenedor-promociones__card{
+        display: grid;
+        grid-template-areas:
+        "imagen-card"
+        "titulo-card"
+        "texto-card"
+        "texto-bases"
+        "boton-card";
+        grid-template-columns: 200px;
+        grid-template-rows: 250px 30px 60px 40px 120px ;
+        justify-content: center;
+        justify-items: center;
+        background-color: #efeaee;
+    }
+    .contenedor-promociones__imagen-card{
+        grid-area: imagen-card;
+        width: 248px;
+        height: 250px;
+        justify-self: center;
+    }
+    .contenedor-promociones__titulo-card{
+        grid-area: titulo-card;
+        justify-self: center;
+        text-align: center;
+        margin: 10px 0px 0px 10px;
+        color: $color-fuente;
+    }
+    .contenedor-promociones__texto-card{
+        grid-area: texto-card;
+        text-align: center;
+        justify-self: center;
+        margin: 20px 0px 20px 0px;
+        color: $color-fuente;
+        font-size: 15px;
+    }
+    .contenedor-promociones__texto-card--bases{
+        grid-area: texto-bases;
+        color: $color-fuente;
+        font-size: 11px;
+        text-align: center;
+        justify-self: center;
+        margin: 10px 0px 5px 0px;
+    }
+    .contenedor-promociones__boton-card{
+        grid-area: boton-card;
+        text-align: center;
+        justify-self: center;
+        margin: 10px 0px 5px 0px;
+        color: $color-fuente;
+    }
+    .btn-primary { 
+        color: #ffffff; 
+        background-color: #01636D; 
+        border-color: #01636D; 
+    }
+}

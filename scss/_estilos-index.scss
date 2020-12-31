@@ -1,0 +1,160 @@
+/*primera seccion INDEX*/
+
+.introduccion-index{
+    margin: 50px 0px 50px 0px;
+
+    .introduccion-index__caja-video{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+    }
+    .introduccion-index__video{
+        width: 100%;
+    }
+
+    .introduccion-index__presentacion-titulo-principal{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+
+    }
+    .introduccion-index__presentacion-texto-principal{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        margin-top: 200px;
+        padding: 0px 150px 0px 150px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+        
+    }
+}
+
+.titulos
+/*comparte con segunda seccion*/ {
+    background: #efeaee;
+    color: #6f7c9c;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*segunda seccion INDEX*/
+.panel-recomendaciones {
+    background: #efeaee;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    .panel-recomendaciones__foto-verano{
+        margin-bottom: 30px;
+        width: 100%;
+        height: 366px;
+        object-fit: cover;
+    }
+    .panel-recomendaciones__foto-cerveza{
+        margin-bottom: 30px;
+        width: 100%;
+        height: 366px;
+        object-fit: cover;
+    }
+
+    .panel-recomendaciones__foto-lugares{
+        margin-bottom: 30px;
+        width: 100%;
+        height: 366px;
+        object-fit: cover;
+    }
+
+    .panel-recomendaciones__foto-invierno{
+        margin-bottom: 30px;
+        width: 100%;
+        height: 366px;
+        object-fit: cover;
+    }
+
+    .panel-recomendaciones__contenedor{
+        position:relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .panel-recomendaciones__texto-recomendacion-chico{
+        width: 95%;
+        height: 366px;
+        background-color: rgba(31,31,31,0.4);
+        opacity: 0;
+        color: white;
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        vertical-align: middle;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+    .panel-recomendaciones__contenedor:hover .panel-recomendaciones__texto-recomendacion-chico {
+        opacity: 1;
+    }
+
+    .panel-recomendaciones__texto-recomendacion-grande{
+        width: 96%;
+        height: 366px;
+        background-color: rgba(31,31,31,0.4);
+        opacity: 0;
+        color: white;
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+    .panel-recomendaciones__contenedor:hover .panel-recomendaciones__texto-recomendacion-grande {
+        opacity: 1;
+    }
+    .panel-recomendacion__texto-recomendacion-centrado{
+        width: 60%;
+        height: 50%;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+    .panel-recomendacion__titulo-verano{
+        border-bottom:4px solid #f6e58d;
+    }
+
+    .panel-recomendacion__titulo-cena{
+        border-bottom:4px solid #ff7979;
+    }
+
+    .panel-recomendacion__titulo-lugares{
+        border-bottom:4px solid #badc58;
+    }
+
+    .panel-recomendacion__titulo-invierno{
+        border-bottom:4px solid #7ed6df;
+    }
+}
+
+
+/*carousel nuevo prueba*/
+

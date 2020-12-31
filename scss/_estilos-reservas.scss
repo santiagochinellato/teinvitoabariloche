@@ -1,0 +1,206 @@
+/*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
+
+/*PRIMERA SECCION*/
+
+.descripcion-reservas{
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+
+    .descripcion-reservas__titulo-depto{
+        margin-left: 60px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        color: #6f7c9c;
+    }
+
+    .descripcion-reservas__informacion-depto {
+        display: grid;
+        grid-template-areas:
+        "texto-depto";
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .descripcion-reservas__bloque-texto {
+        width: auto;
+        height: 400px;
+        grid-area: texto-depto;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .descripcion-reservas__titulo{
+        margin-left: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #6f7c9c;
+    }
+
+    .descripcion-reservas__subtitulo{
+        margin-left: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #6f7c9c;
+    }
+
+    .descripcion-reservas__texto-reserva {
+        margin-left: 30px;
+        color: #6f7c9c;
+    }
+
+
+    .descripcion-reservas__mapa-galeria{
+        display: grid;
+        grid-template-areas:
+        "galeria-fotos mapa";
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .descripcion-reservas__ubicacion-depto {
+        margin-left: 100px;
+        grid-area: mapa;
+    }
+
+    .descripcion-reservas__titulo-ubicacion{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #6f7c9c;
+    }
+
+    .descripcion-reservas__mapa-recomendacion{
+        width: 500px;
+        height: 490px;
+    }
+
+    .descripcion-reservas__titulo-galeria{
+        margin-left: 60px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #6f7c9c;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*seccion galeria fotos*/
+
+.body-galeria{
+    grid-area: galeria-fotos;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background:  #efeaee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+opacity: 1;
+}
+
+.gallery-top2 {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs2 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.gallery-thumbs2 .swiper-slide-thumb-active {
+opacity: 1;
+}
+
+.gallery-top3 {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs3 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs3 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.gallery-thumbs3 .swiper-slide-thumb-active {
+opacity: 1;
+}
+
+/*segunda seccion "reservas"*/
+
+.titulo-alquiler{
+color: #6f7c9c;
+}
+
+/*seccion formulario*/
+
+.segunda-seccion {
+background:#018599;
+color: #efeaee;
+}
+
+.formulario {
+margin-top: 30px;
+margin-left: 30px;
+margin-bottom: 50px;
+background: #018599;
+color: #efeaee;
+}
+

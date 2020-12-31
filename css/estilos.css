@@ -1,0 +1,1308 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*primera seccion INDEX*/
+.introduccion-index {
+  margin: 50px 0px 50px 0px;
+}
+
+.introduccion-index .introduccion-index__caja-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.introduccion-index .introduccion-index__video {
+  width: 100%;
+}
+
+.introduccion-index .introduccion-index__presentacion-titulo-principal {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.introduccion-index .introduccion-index__presentacion-texto-principal {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+  padding: 0px 150px 0px 150px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.titulos {
+  background: #efeaee;
+  color: #6f7c9c;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*segunda seccion INDEX*/
+.panel-recomendaciones {
+  background: #efeaee;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.panel-recomendaciones .panel-recomendaciones__foto-verano {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 366px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.panel-recomendaciones .panel-recomendaciones__foto-cerveza {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 366px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.panel-recomendaciones .panel-recomendaciones__foto-lugares {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 366px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.panel-recomendaciones .panel-recomendaciones__foto-invierno {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 366px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.panel-recomendaciones .panel-recomendaciones__contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.panel-recomendaciones .panel-recomendaciones__texto-recomendacion-chico {
+  width: 95%;
+  height: 366px;
+  background-color: rgba(31, 31, 31, 0.4);
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  vertical-align: middle;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.panel-recomendaciones .panel-recomendaciones__contenedor:hover .panel-recomendaciones__texto-recomendacion-chico {
+  opacity: 1;
+}
+
+.panel-recomendaciones .panel-recomendaciones__texto-recomendacion-grande {
+  width: 96%;
+  height: 366px;
+  background-color: rgba(31, 31, 31, 0.4);
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.panel-recomendaciones .panel-recomendaciones__contenedor:hover .panel-recomendaciones__texto-recomendacion-grande {
+  opacity: 1;
+}
+
+.panel-recomendaciones .panel-recomendacion__texto-recomendacion-centrado {
+  width: 60%;
+  height: 50%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.panel-recomendaciones .panel-recomendacion__titulo-verano {
+  border-bottom: 4px solid #f6e58d;
+}
+
+.panel-recomendaciones .panel-recomendacion__titulo-cena {
+  border-bottom: 4px solid #ff7979;
+}
+
+.panel-recomendaciones .panel-recomendacion__titulo-lugares {
+  border-bottom: 4px solid #badc58;
+}
+
+.panel-recomendaciones .panel-recomendacion__titulo-invierno {
+  border-bottom: 4px solid #7ed6df;
+}
+
+/*carousel nuevo prueba*/
+/*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
+/*PRIMERA SECCION*/
+.descripcion-reservas {
+  border-bottom: 1px solid grey;
+  padding-bottom: 50px;
+}
+
+.descripcion-reservas .descripcion-reservas__titulo-depto {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__informacion-depto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "texto-depto";
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto {
+  width: auto;
+  height: 400px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: texto-depto;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.descripcion-reservas .descripcion-reservas__titulo {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__subtitulo {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__texto-reserva {
+  margin-left: 30px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__mapa-galeria {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "galeria-fotos mapa";
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.descripcion-reservas .descripcion-reservas__ubicacion-depto {
+  margin-left: 100px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mapa;
+}
+
+.descripcion-reservas .descripcion-reservas__titulo-ubicacion {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__mapa-recomendacion {
+  width: 500px;
+  height: 490px;
+}
+
+.descripcion-reservas .descripcion-reservas__titulo-galeria {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+/*seccion galeria fotos*/
+.body-galeria {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: galeria-fotos;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background: #efeaee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-top2 {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs2 {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs2 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.gallery-thumbs2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-top3 {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs3 {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs3 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.gallery-thumbs3 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/*segunda seccion "reservas"*/
+.titulo-alquiler {
+  color: #6f7c9c;
+}
+
+/*seccion formulario*/
+.segunda-seccion {
+  background: #018599;
+  color: #efeaee;
+}
+
+.formulario {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  background: #018599;
+  color: #efeaee;
+}
+
+.presentacion-recomendaciones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.presentacion-recomendaciones .presentacion-recomendaciones__titulo-principal-recomendaciones {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #6f7c9c;
+}
+
+.presentacion-recomendaciones .presentacion-recomendaciones__texto-recomendaciones {
+  margin-right: 60px;
+  margin-left: 60px;
+  color: #6f7c9c;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.seccion-recomendaciones {
+  margin-bottom: 200px;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-acordeon {
+  background-color: #f6e58d;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones {
+  text-decoration: none !important;
+  color: white;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones:hover {
+  color: white !important;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__espacio-descripcion {
+  background-color: #efeaee;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__introduccion-seccion {
+  background-color: #f7eaad;
+  color: #6f7c9c;
+  margin-bottom: 40px;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones {
+  margin-top: 20px;
+}
+
+.recomendaciones-naranja {
+  background-color: #f7eaad;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  -ms-grid-rows: 60px 200px 300px 60px;
+      grid-template-rows: 60px 200px 300px 60px;
+  -ms-grid-columns: 120px 60px 60px 60px;
+      grid-template-columns: 120px 60px 60px 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*fotos carousel recomendaciones*/
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__titulo-recomendaciones {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+  color: #6f7c9c;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__foto-recomendaciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foto;
+  width: 290px;
+  height: 200px;
+      justify-self: center;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__tamaño-fotos-carousel-recomendaciones {
+  width: 290px;
+  height: 200px;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__texto-recomendaciones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__icono-facebook {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: icono-facebook;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__icono-instagram {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: icono-instagram;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__icono-maps {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: icono-maps;
+  width: 40px;
+  height: 40px;
+      justify-self: center;
+  margin-top: 5px;
+}
+
+.recomendaciones-naranja .recomendaciones-naranja__texto-masinfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mas-info;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-acordeon {
+  background-color: #ff7979;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones {
+  text-decoration: none !important;
+  color: white;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones:hover {
+  color: white !important;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__espacio-descripcion {
+  background-color: #efeaee;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__introduccion-seccion {
+  background-color: #f39a9a;
+  color: #6f7c9c;
+  margin-bottom: 40px;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones {
+  margin-top: 20px;
+}
+
+.recomendaciones-rojo {
+  background-color: #f39a9a;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  -ms-grid-rows: 60px 200px 300px 60px;
+      grid-template-rows: 60px 200px 300px 60px;
+  -ms-grid-columns: 120px 60px 60px 60px;
+      grid-template-columns: 120px 60px 60px 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*fotos carousel recomendaciones*/
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__titulo-recomendaciones {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+  color: #6f7c9c;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__foto-recomendaciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foto;
+  width: 290px;
+  height: 200px;
+      justify-self: center;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__tamaño-fotos-carousel-recomendaciones {
+  width: 290px;
+  height: 200px;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__texto-recomendaciones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__icono-facebook {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: icono-facebook;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__icono-instagram {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: icono-instagram;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__icono-maps {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: icono-maps;
+  width: 40px;
+  height: 40px;
+      justify-self: center;
+  margin-top: 5px;
+}
+
+.recomendaciones-rojo .recomendaciones-rojo__texto-masinfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mas-info;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-acordeon {
+  background-color: #badc58;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones {
+  text-decoration: none !important;
+  color: white;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones:hover {
+  color: white !important;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__espacio-descripcion {
+  background-color: #efeaee;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__introduccion-seccion {
+  background-color: #cbe482;
+  color: #6f7c9c;
+  margin-bottom: 40px;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones {
+  margin-top: 20px;
+}
+
+.recomendaciones-verde {
+  background-color: #cbe482;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  -ms-grid-rows: 60px 200px 300px 60px;
+      grid-template-rows: 60px 200px 300px 60px;
+  -ms-grid-columns: 120px 60px 60px 60px;
+      grid-template-columns: 120px 60px 60px 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*fotos carousel recomendaciones*/
+}
+
+.recomendaciones-verde .recomendaciones-verde__titulo-recomendaciones {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+  color: #6f7c9c;
+}
+
+.recomendaciones-verde .recomendaciones-verde__foto-recomendaciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foto;
+  width: 290px;
+  height: 200px;
+      justify-self: center;
+}
+
+.recomendaciones-verde .recomendaciones-verde__tamaño-fotos-carousel-recomendaciones {
+  width: 290px;
+  height: 200px;
+}
+
+.recomendaciones-verde .recomendaciones-verde__texto-recomendaciones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.recomendaciones-verde .recomendaciones-verde__icono-facebook {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: icono-facebook;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-verde .recomendaciones-verde__icono-instagram {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: icono-instagram;
+  width: 30px;
+  height: 30px;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-verde .recomendaciones-verde__icono-maps {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: icono-maps;
+  width: 40px;
+  height: 40px;
+      justify-self: center;
+  margin-top: 5px;
+}
+
+.recomendaciones-verde .recomendaciones-verde__texto-masinfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mas-info;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+      justify-self: stretch;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-acordeon {
+  background-color: #7ed6df;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones {
+  text-decoration: none !important;
+  color: white;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones:hover {
+  color: white !important;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__espacio-descripcion {
+  background-color: #efeaee;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__introduccion-seccion {
+  background-color: #9bd5db;
+  color: #6f7c9c;
+  margin-bottom: 40px;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones {
+  margin-top: 20px;
+}
+
+.recomendaciones-azul {
+  background-color: #9bd5db;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  -ms-grid-rows: 60px 200px 300px 60px;
+      grid-template-rows: 60px 200px 300px 60px;
+  -ms-grid-columns: 120px 60px 60px 60px;
+      grid-template-columns: 120px 60px 60px 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*fotos carousel recomendaciones*/
+}
+
+.recomendaciones-azul .recomendaciones-azul__titulo-recomendaciones {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+  margin-top: 20px;
+  text-align: center;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  color: #6f7c9c;
+}
+
+.recomendaciones-azul .recomendaciones-azul__foto-recomendaciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foto;
+  width: 290px;
+  height: 200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.recomendaciones-azul .recomendaciones-azul__tamaño-fotos-carousel-recomendaciones {
+  width: 290px;
+  height: 200px;
+}
+
+.recomendaciones-azul .recomendaciones-azul__texto-recomendaciones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: texto;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.recomendaciones-azul .recomendaciones-azul__icono-facebook {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: icono-facebook;
+  width: 30px;
+  height: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-azul .recomendaciones-azul__icono-instagram {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: icono-instagram;
+  width: 30px;
+  height: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.recomendaciones-azul .recomendaciones-azul__icono-maps {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: icono-maps;
+  width: 40px;
+  height: 40px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 5px;
+}
+
+.recomendaciones-azul .recomendaciones-azul__texto-masinfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mas-info;
+  color: #6f7c9c;
+  margin-top: 20px;
+  text-align: center;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.seccion-promociones {
+  margin-bottom: 500px;
+}
+
+.seccion-promociones .seccion-promociones__titulos-promociones {
+  color: #6f7c9c;
+}
+
+.seccion-promociones .seccion-promociones__texto {
+  color: #6f7c9c;
+}
+
+.seccion-promociones .seccion-promociones__subtitulos-promociones {
+  color: #6f7c9c;
+  margin-bottom: 50px;
+}
+
+.contenedor-promociones {
+  margin: auto;
+}
+
+.contenedor-promociones .contenedor-promociones__principal {
+  margin-bottom: 50px;
+}
+
+.contenedor-promociones .contenedor-promociones__card {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagen-card" "titulo-card" "texto-card" "texto-bases" "boton-card";
+  -ms-grid-columns: 200px;
+      grid-template-columns: 200px;
+  -ms-grid-rows: 250px 30px 60px 40px 120px;
+      grid-template-rows: 250px 30px 60px 40px 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  background-color: #efeaee;
+}
+
+.contenedor-promociones .contenedor-promociones__imagen-card {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen-card;
+  width: 248px;
+  height: 250px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contenedor-promociones .contenedor-promociones__titulo-card {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: titulo-card;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  margin: 10px 0px 0px 10px;
+  color: #6f7c9c;
+}
+
+.contenedor-promociones .contenedor-promociones__texto-card {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: texto-card;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 20px 0px 20px 0px;
+  color: #6f7c9c;
+  font-size: 15px;
+}
+
+.contenedor-promociones .contenedor-promociones__texto-card--bases {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: texto-bases;
+  color: #6f7c9c;
+  font-size: 11px;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 10px 0px 5px 0px;
+}
+
+.contenedor-promociones .contenedor-promociones__boton-card {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: boton-card;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 10px 0px 5px 0px;
+  color: #6f7c9c;
+}
+
+.contenedor-promociones .btn-primary {
+  color: #ffffff;
+  background-color: #01636D;
+  border-color: #01636D;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo logo" "menu-1 menu-1";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 90% 10%;
+      grid-template-rows: 90% 10%;
+  background-image: url(../images/background-prueba.jpg);
+  background-size: cover;
+  height: 480px;
+}
+
+header .header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  opacity: 1;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+header a:link, header a:visited, header a:active {
+  text-decoration: none;
+  color: white !important;
+}
+
+header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: menu-1;
+  background-color: transparent !important;
+  color: #6f7c9c;
+  text-align: center;
+  list-style: none;
+  height: 50px;
+}
+
+header .header__hamburguesa {
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+header .header-menu__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6f7c9c;
+  text-align: center;
+  list-style: none;
+}
+
+header .header-menu__ul li a {
+  display: inline-block;
+  width: 180px;
+  font-size: 14pt;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+header .header-menu__ul li a:hover {
+  color: #018599;
+  background-color: #f8f3fa8f;
+}
+
+body {
+  background: #efeaee;
+}
+
+/*footer*/
+.pie {
+  width: 100%;
+  background-color: #263238;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+}
+
+.pie p {
+  font-size: 13px;
+  color: #CCC;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.pie .pie__titulo-blanco {
+  color: #FFF;
+}
+
+.pie .pie_espacio-secciones {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pie .pie__mb10 {
+  padding-bottom: 15px;
+}
+
+.pie .pie__estilos-cuadricula {
+  margin: 0px;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
+}
+
+.pie .pie__estilos-cuadricula li {
+  padding: 0px 0px 5px 0px;
+}
+
+.pie .pie__estilos-cuadricula li a {
+  color: #CCC;
+}
+
+.pie .pie__estilos-cuadricula li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pie .pie__links-interes {
+  padding-left: 300px;
+}
+
+.pie .pie__paginas-amigas {
+  padding-left: 300px;
+}
+
+.pie .pie__menu-footer {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.pie .pie__menu-footer li {
+  display: inline;
+}
+
+.pie .pie__menu-footer li a {
+  color: #999;
+  margin: 0 12px;
+}
+
+.pie .pie__redes-sociales {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.pie .pie__redes-sociales li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.pie .pie__redes-sociales li a {
+  color: #CCC;
+  border: 1px solid #CCC;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.pie .pie__redes-sociales li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/*ESTO CORRESPONDE AL FOOTER PERO NO SE  A QUE LE APLICA LAS PROPIEDADES*/
+.fleft {
+  float: left;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+  display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+  text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+  margin-top: 5px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid #323f45;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .foto-verano {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .foto-cerveza {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .foto-lugares {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .foto-invierno {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .panel-recomendaciones {
+    width: 767px;
+  }
+  .foto-verano {
+    width: 285px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .foto-cerveza {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .foto-lugares {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .foto-invierno {
+    width: 285px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .panel-recomendaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 500px;
+  }
+  .foto-verano {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .foto-cerveza {
+    width: 180px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .foto-lugares {
+    width: 180px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .foto-invierno {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

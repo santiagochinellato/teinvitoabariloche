@@ -1,0 +1,284 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@import "estilos-index";
+@import "estilos-reservas";
+@import "estilos-recomendaciones";
+@import "estilos-promociones";
+
+header {
+    display: grid;
+    grid-template-areas:
+        "logo logo"
+        "menu-1 menu-1";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% 10%;
+    background-image: url(../images/background-prueba.jpg);
+    background-size: cover;
+    height: 480px;
+
+    .header__logo {
+        grid-area: logo;
+        justify-self: center;
+        opacity: 1;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    a:link, a:visited, a:active {
+        text-decoration: none;
+        color: white !important;
+    }
+
+    .header__menu{
+        display: flex;
+        justify-content: center;
+        grid-area: menu-1;
+        background-color: transparent !important;
+        color: #6f7c9c;
+        text-align: center;
+        list-style: none;
+        height: 50px;
+    }
+
+    .header__hamburguesa  {
+        color: white ;
+        border-color: white ;
+        background-color: white;
+    }
+
+    .header-menu__ul {
+        display: flex;
+        justify-content: center;
+        color: #6f7c9c;
+        text-align: center;
+        list-style: none;
+    }
+
+    .header-menu__ul li a{
+        display: inline-block;
+        width: 180px ;
+        font-size: 14pt;
+        padding: 14px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .header-menu__ul li a:hover {
+        color: #018599;
+        background-color: #f8f3fa8f;
+    }
+}
+
+body{
+    background: #efeaee ;
+}
+
+/*footer*/
+
+.pie{
+
+    width:100%;
+    background-color:#263238;
+    min-height:250px;
+    padding:10px 0px 25px 0px ;
+
+    p{
+        font-size:13px;
+        color:#CCC;
+        padding-bottom:0px;
+        margin-bottom:8px;
+    }
+
+    .pie__titulo-blanco{
+        color:#FFF;
+    }
+
+    .pie_espacio-secciones{
+        padding-top:40px ;
+        margin-bottom:20px ;
+    }
+
+    .pie__mb10{
+        padding-bottom:15px ;
+    }
+
+    .pie__estilos-cuadricula{
+        margin:0px;
+        list-style-type:none ;
+        font-size:14px;
+        padding:0px 0px 10px 0px ;
+    }
+
+    .pie__estilos-cuadricula li{
+        padding:0px 0px 5px 0px;
+    }
+
+    .pie__estilos-cuadricula li a{
+        color:#CCC;
+    }
+
+    .pie__estilos-cuadricula li a:hover{
+        color:#fff;
+        text-decoration:none;
+    }
+
+    .pie__links-interes{
+        padding-left:300px;
+    }
+
+    .pie__paginas-amigas{
+        padding-left: 300px;
+    }
+
+    .pie__menu-footer {
+        list-style-type:none;
+        padding:0px;
+        display:table;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+
+    .pie__menu-footer li{
+        display:inline;
+    }
+
+    .pie__menu-footer li a{
+        color:#999;
+        margin:0 12px;
+    }
+
+    .pie__redes-sociales{display:table;
+        margin:15px auto 0 auto;
+        list-style-type:none;
+    }
+
+    .pie__redes-sociales li{
+        padding-left:20px;
+        padding-top:10px;
+        float:left;
+    }
+
+    .pie__redes-sociales li a{
+        color:#CCC;
+        border:1px solid #CCC;
+        padding:8px;
+        border-radius:50%;
+    }
+
+    .pie__redes-sociales li i{
+        width:20px;
+        height:20px;
+        text-align:center;
+    }
+}
+
+/*ESTO CORRESPONDE AL FOOTER PERO NO SE  A QUE LE APLICA LAS PROPIEDADES*/
+
+.fleft{
+    float:left;
+}
+.padding-right{
+    padding-right:10px;
+}
+.footer_ul2_amrc{
+    margin:0px;
+    list-style-type:none;
+    padding:0px;
+}
+.footer_ul2_amrc li p{
+    display:table;
+}
+.footer_ul2_amrc li a:hover{
+    text-decoration:none;
+}
+.footer_ul2_amrc li i{
+    margin-top:5px;
+}
+
+.bottom_border{
+    border-bottom:1px solid #323f45;
+    padding-bottom:20px;
+}
+
+$ancho: 700px;
+$alto:400px;
+$marginbottom: 10px;
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .foto-verano{
+        @include sizes($ancho,$alto);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-cerveza{
+        @include sizes(($ancho)-200,$alto);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-lugares{
+        @include sizes(($ancho)-200,$alto);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-invierno{
+        @include sizes($ancho,$alto);
+        margin-bottom: ($marginbottom);
+    }
+
+}
+
+@media (min-width: 576px) and (max-width:991.98px){
+
+        .panel-recomendaciones{
+        width: 767px;
+        }
+
+    .foto-verano{
+        @include sizes(($ancho)-415,($alto)-200);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-cerveza{
+        @include sizes(($ancho)-450,($alto)-200);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-lugares{
+        @include sizes(($ancho)-450,($alto)-200);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-invierno{
+        @include sizes(($ancho)-415,($alto)-200);
+        margin-bottom: ($marginbottom);
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .panel-recomendaciones{
+        display:flex;
+        flex-wrap: wrap;
+        width: 500px;
+        }
+
+    .foto-verano{
+        @include sizes(($ancho)-500,($alto)-250);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-cerveza{
+        @include sizes(($ancho)-520,($alto)-250);
+        margin-bottom: ($marginbottom);
+    }
+    .foto-lugares{
+        @include sizes(($ancho)-520,($alto)-250);
+        margin-bottom: ($marginbottom);;
+    }
+    .foto-invierno{
+        @include sizes(($ancho)-500,($alto)-250);
+        margin-bottom: ($marginbottom);
+    }
+}
