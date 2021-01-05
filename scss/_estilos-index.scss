@@ -1,3 +1,5 @@
+$color: #efeaee;
+$color-fuente:#6f7c9c;
 /*primera seccion INDEX*/
 
 .introduccion-index{
@@ -49,16 +51,17 @@
     grid-template-rows: 100%;
     width: 620px;
     height: 250px;
+    align-items: center;
     align-content: space-around;
-    border: 1px solid black;
+    background-color: rgb(177, 177, 238);
 
     .tarjeta-deptos__carousel-depto{
         grid-area: carousel;
-        width: 295px;
-        height: 250px;
-        margin-top: 20px;
+        width: 280px;
+        height: 207px;
         align-self: center;
         justify-self: center;
+        
 
     }
 
@@ -67,19 +70,22 @@
         align-self: center;
         display: grid;
         grid-template-areas: 
-        "titulo titulo titulo titulo"
-        "descripcion descripcion descripcion descripcion"
-        "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto"
-        "icono-bano icono-bano-texto icono-ubicacion icono-ubicacion-texto"
-        "boton boton boton boton";
-        grid-template-columns: 10% 40% 10% 40%;
-        grid-template-rows: 15% 40% 15% 15% 15% ;
+        "titulo titulo titulo titulo titulo titulo"
+        "descripcion descripcion descripcion descripcion descripcion descripcion"
+        "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto"
+        "boton boton boton boton boton boton";
+        grid-template-columns: 10% 20% 10% 20% 10% 30%;
+        grid-template-rows: 20% 42% 18% 20%;
 
         .tarjeta-deptos__titulo-depto{
             grid-area: titulo;
+            align-self: center;
+            color: $color-fuente;
         }
         .tarjeta-deptos__descripcion{
             grid-area: descripcion;
+            align-self: center;
+            color: $color-fuente;
         }
 
         .tarjeta-deptos__descripcion-icono-cama-simple{
@@ -91,7 +97,6 @@
                 height: 30px;
             }
         }
-            
         .tarjeta-deptos__descripcion-icono-cama-simple-texto{
             grid-area: icono-cama-texto ;
         }
@@ -136,6 +141,13 @@
 
         .tarjeta-deptos__descripcion-icono-ubicacion-texto{
             grid-area: icono-ubicacion-texto;
+        }
+
+        .tarjeta-deptos__descripcion-icono-ubicacion-boton{
+            grid-area: boton;
+            justify-self: start;
+            align-self: end;
+            margin-right: 20px;
         }
     }
 }

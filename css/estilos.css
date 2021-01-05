@@ -68,18 +68,20 @@
       grid-template-rows: 100%;
   width: 620px;
   height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  border: 1px solid black;
+  background-color: #b1b1ee;
 }
 
 .tarjeta-deptos .tarjeta-deptos__carousel-depto {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: carousel;
-  width: 295px;
-  height: 250px;
-  margin-top: 20px;
+  width: 280px;
+  height: 207px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -95,11 +97,11 @@
       align-self: center;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto" "icono-bano icono-bano-texto icono-ubicacion icono-ubicacion-texto" "boton boton boton boton";
-  -ms-grid-columns: 10% 40% 10% 40%;
-      grid-template-columns: 10% 40% 10% 40%;
-  -ms-grid-rows: 15% 40% 15% 15% 15%;
-      grid-template-rows: 15% 40% 15% 15% 15%;
+      grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
+  -ms-grid-columns: 10% 20% 10% 20% 10% 30%;
+      grid-template-columns: 10% 20% 10% 20% 10% 30%;
+  -ms-grid-rows: 20% 42% 18% 20%;
+      grid-template-rows: 20% 42% 18% 20%;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__titulo-depto {
@@ -107,13 +109,20 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: titulo;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #6f7c9c;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 6;
   grid-area: descripcion;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #6f7c9c;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple {
@@ -155,8 +164,8 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: icono-bano;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -168,14 +177,12 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano-texto {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
   grid-area: icono-bano-texto;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
   grid-area: icono-ubicacion;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -187,9 +194,20 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion-texto {
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
   grid-area: icono-ubicacion-texto;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion-boton {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: boton;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-right: 20px;
 }
 
 .titulos {
