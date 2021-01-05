@@ -38,10 +38,107 @@
         display: flex;
         justify-content: center;
         color: white;
-        
     }
 }
+/* seccion reservas*/
+.tarjeta-deptos{
+    display: grid;
+    grid-template-areas: 
+    "carousel titulo-depto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 620px;
+    height: 250px;
+    align-content: space-around;
+    border: 1px solid black;
 
+    .tarjeta-deptos__carousel-depto{
+        grid-area: carousel;
+        width: 295px;
+        height: 250px;
+        margin-top: 20px;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .tarjeta-deptos__titulo{
+        grid-area: titulo-depto ;
+        align-self: center;
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "descripcion descripcion descripcion descripcion"
+        "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto"
+        "icono-bano icono-bano-texto icono-ubicacion icono-ubicacion-texto"
+        "boton boton boton boton";
+        grid-template-columns: 10% 40% 10% 40%;
+        grid-template-rows: 15% 40% 15% 15% 15% ;
+
+        .tarjeta-deptos__titulo-depto{
+            grid-area: titulo;
+        }
+        .tarjeta-deptos__descripcion{
+            grid-area: descripcion;
+        }
+
+        .tarjeta-deptos__descripcion-icono-cama-simple{
+            grid-area: icono-cama ;
+            justify-self: center;
+
+            .tarjeta-deptos__descripcion-icono-cama-simple--icono{
+                width: 30px;
+                height: 30px;
+            }
+        }
+            
+        .tarjeta-deptos__descripcion-icono-cama-simple-texto{
+            grid-area: icono-cama-texto ;
+        }
+
+        .tarjeta-deptos__descripcion-icono-cama-doble{
+            grid-area: icono-cama-doble;
+            justify-self: center;
+
+            .tarjeta-deptos__descripcion-icono-cama-doble--icono{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .tarjeta-deptos__descripcion-icono-cama-doble-texto{
+            grid-area: icono-cama-doble-texto;
+        }
+
+        .tarjeta-deptos__descripcion-icono-bano{
+            grid-area: icono-bano;
+            justify-self: center;
+
+            .tarjeta-deptos__descripcion-icono-bano--icono{
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .tarjeta-deptos__descripcion-icono-bano-texto{
+            grid-area: icono-bano-texto;
+        }
+
+        .tarjeta-deptos__descripcion-icono-ubicacion{
+            grid-area: icono-ubicacion;
+            justify-self: center;
+
+            .tarjeta-deptos__descripcion-icono-ubicacion--icono{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .tarjeta-deptos__descripcion-icono-ubicacion-texto{
+            grid-area: icono-ubicacion-texto;
+        }
+    }
+}
 .titulos
 /*comparte con segunda seccion*/ {
     background: #efeaee;

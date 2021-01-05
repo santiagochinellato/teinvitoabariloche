@@ -57,6 +57,141 @@
   color: white;
 }
 
+/* seccion reservas*/
+.tarjeta-deptos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "carousel titulo-depto";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  width: 620px;
+  height: 250px;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  border: 1px solid black;
+}
+
+.tarjeta-deptos .tarjeta-deptos__carousel-depto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carousel;
+  width: 295px;
+  height: 250px;
+  margin-top: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo-depto;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto" "icono-bano icono-bano-texto icono-ubicacion icono-ubicacion-texto" "boton boton boton boton";
+  -ms-grid-columns: 10% 40% 10% 40%;
+      grid-template-columns: 10% 40% 10% 40%;
+  -ms-grid-rows: 15% 40% 15% 15% 15%;
+      grid-template-rows: 15% 40% 15% 15% 15%;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__titulo-depto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: descripcion;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icono-cama;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple .tarjeta-deptos__descripcion-icono-cama-simple--icono {
+  width: 30px;
+  height: 30px;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple-texto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: icono-cama-texto;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-doble {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: icono-cama-doble;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-doble .tarjeta-deptos__descripcion-icono-cama-doble--icono {
+  width: 30px;
+  height: 30px;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-doble-texto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: icono-cama-doble-texto;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: icono-bano;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano .tarjeta-deptos__descripcion-icono-bano--icono {
+  width: 25px;
+  height: 25px;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano-texto {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: icono-bano-texto;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: icono-ubicacion;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion .tarjeta-deptos__descripcion-icono-ubicacion--icono {
+  width: 20px;
+  height: 20px;
+}
+
+.tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion-texto {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: icono-ubicacion-texto;
+}
+
 .titulos {
   background: #efeaee;
   color: #6f7c9c;
