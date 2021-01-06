@@ -183,6 +183,27 @@ opacity: 1;
 opacity: 1;
 }
 
+.gallery-top4 {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs4 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs4 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.gallery-thumbs4 .swiper-slide-thumb-active {
+opacity: 1;
+}
+
 /*segunda seccion "reservas"*/
 
 .titulo-alquiler{

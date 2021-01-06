@@ -58,10 +58,18 @@
 }
 
 /* seccion reservas*/
+.titulos {
+  text-align: center;
+}
+
+.contenedor-reservas {
+  margin-left: 10px;
+}
+
 .tarjeta-deptos {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "carousel titulo-depto";
+      grid-template-areas: "titulo-depto carousel";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 100%;
@@ -73,12 +81,13 @@
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  background-color: #b1b1ee;
+  background-color: #a0d4dd;
+  margin-top: 20px;
 }
 
 .tarjeta-deptos .tarjeta-deptos__carousel-depto {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: carousel;
   width: 280px;
   height: 207px;
@@ -91,15 +100,15 @@
 
 .tarjeta-deptos .tarjeta-deptos__titulo {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: titulo-depto;
   -ms-grid-row-align: center;
       align-self: center;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
-  -ms-grid-columns: 10% 20% 10% 20% 10% 30%;
-      grid-template-columns: 10% 20% 10% 20% 10% 30%;
+  -ms-grid-columns: 30% 10% 20% 10% 20% 10%;
+      grid-template-columns: 30% 10% 20% 10% 20% 10%;
   -ms-grid-rows: 20% 42% 18% 20%;
       grid-template-rows: 20% 42% 18% 20%;
 }
@@ -111,6 +120,7 @@
   grid-area: titulo;
   -ms-flex-item-align: center;
       align-self: center;
+      justify-self: center;
   color: #6f7c9c;
 }
 
@@ -120,8 +130,8 @@
   -ms-grid-column-span: 6;
   grid-area: descripcion;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
   color: #6f7c9c;
 }
 
@@ -129,7 +139,6 @@
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: icono-cama;
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -148,7 +157,6 @@
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: icono-cama-doble;
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -167,7 +175,6 @@
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   grid-area: icono-bano;
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -202,12 +209,167 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: boton;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 20px;
+}
+
+/*tarjeta reserva reversa*/
+.tarjeta-deptos-reversa {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "carousel-reversa titulo-depto-reversa";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  width: 620px;
+  height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: #a0d4dd;
+  margin-top: 20px;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__carousel-depto-reversa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carousel-reversa;
+  width: 280px;
+  height: 207px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo-depto-reversa;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
+  -ms-grid-columns: 30% 10% 20% 10% 20% 10%;
+      grid-template-columns: 30% 10% 20% 10% 20% 10%;
+  -ms-grid-rows: 20% 42% 18% 20%;
+      grid-template-rows: 20% 42% 18% 20%;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__titulo-depto-reversa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: titulo;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  color: #6f7c9c;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-reversa {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: descripcion;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  color: #6f7c9c;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icono-cama;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-reversa .tarjeta-deptos__descripcion-icono-cama-simple--icono-reversa {
+  width: 30px;
+  height: 30px;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-texto-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: icono-cama-texto;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: icono-cama-doble;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-reversa .tarjeta-deptos__descripcion-icono-cama-doble--icono-reversa {
+  width: 30px;
+  height: 30px;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-texto-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: icono-cama-doble-texto;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: icono-bano;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-reversa .tarjeta-deptos__descripcion-icono-bano--icono-reversa {
+  width: 25px;
+  height: 25px;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-texto-reversa {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: icono-bano-texto;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion--reversa {
+  grid-area: icono-ubicacion;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion--reversa .tarjeta-deptos__descripcion-icono-ubicacion--icono-reversa {
+  width: 20px;
+  height: 20px;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion-texto-reversa {
+  grid-area: icono-ubicacion-texto;
+}
+
+.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion-boton-reversa {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: boton;
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .titulos {
@@ -528,6 +690,28 @@
 }
 
 .gallery-thumbs3 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-top4 {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs4 {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs4 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.gallery-thumbs4 .swiper-slide-thumb-active {
   opacity: 1;
 }
 
