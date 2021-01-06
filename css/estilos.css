@@ -37,6 +37,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .introduccion-index .introduccion-index__presentacion-texto-principal {
@@ -55,11 +56,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* seccion reservas*/
 .titulos {
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .contenedor-reservas {
@@ -122,6 +125,7 @@
       align-self: center;
       justify-self: center;
   color: #6f7c9c;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion {
@@ -133,6 +137,7 @@
       align-self: center;
   text-align: center;
   color: #6f7c9c;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple {
@@ -272,6 +277,7 @@
       align-self: center;
       justify-self: center;
   color: #6f7c9c;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-reversa {
@@ -284,6 +290,7 @@
       align-self: center;
   text-align: center;
   color: #6f7c9c;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-reversa {
@@ -378,6 +385,7 @@
   margin-left: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*segunda seccion INDEX*/
@@ -400,6 +408,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .panel-recomendaciones .panel-recomendaciones__foto-verano {
@@ -514,6 +523,7 @@
 .descripcion-reservas {
   border-bottom: 1px solid grey;
   padding-bottom: 50px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .descripcion-reservas .descripcion-reservas__titulo-depto {
@@ -724,6 +734,7 @@
 .segunda-seccion {
   background: #018599;
   color: #efeaee;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .formulario {
@@ -1390,6 +1401,7 @@ header .header__menu {
   grid-area: menu-1;
   background-color: transparent !important;
   color: #6f7c9c;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   list-style: none;
   height: 50px;
@@ -1441,6 +1453,7 @@ body {
 
 .pie p {
   font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
   color: #CCC;
   padding-bottom: 0px;
   margin-bottom: 8px;
@@ -1448,6 +1461,7 @@ body {
 
 .pie .pie__titulo-blanco {
   color: #FFF;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie_espacio-secciones {
@@ -1457,6 +1471,7 @@ body {
 
 .pie .pie__mb10 {
   padding-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie__estilos-cuadricula {
@@ -1481,10 +1496,12 @@ body {
 
 .pie .pie__links-interes {
   padding-left: 300px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie__paginas-amigas {
   padding-left: 300px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie__menu-footer {
@@ -1495,6 +1512,7 @@ body {
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie__menu-footer li {

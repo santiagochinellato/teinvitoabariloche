@@ -5,6 +5,7 @@
 .descripcion-reservas{
     border-bottom: 1px solid grey;
     padding-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
 
     .descripcion-reservas__titulo-depto{
         margin-left: 60px;
@@ -83,17 +84,7 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-    /*seccion galeria fotos*/
+/*seccion galeria fotos*/
 
 .body-galeria{
     grid-area: galeria-fotos;
@@ -215,6 +206,7 @@ color: #6f7c9c;
 .segunda-seccion {
 background:#018599;
 color: #efeaee;
+font-family: 'Quicksand', sans-serif;
 }
 
 .formulario {

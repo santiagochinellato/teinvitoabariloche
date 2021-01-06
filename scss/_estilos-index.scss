@@ -26,6 +26,7 @@ $color-fuente:#6f7c9c;
         display: flex;
         justify-content: center;
         color: white;
+        font-family: 'Quicksand', sans-serif;
 
     }
     .introduccion-index__presentacion-texto-principal{
@@ -40,11 +41,13 @@ $color-fuente:#6f7c9c;
         display: flex;
         justify-content: center;
         color: white;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 /* seccion reservas*/
 .titulos{
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 .contenedor-reservas{
     margin-left: 10px;
@@ -87,12 +90,14 @@ $color-fuente:#6f7c9c;
             align-self: center;
             justify-self: center;
             color: $color-fuente;
+            font-family: 'Quicksand', sans-serif;
         }
         .tarjeta-deptos__descripcion{
             grid-area: descripcion;
             align-self: center;
             text-align: center;
             color: $color-fuente;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .tarjeta-deptos__descripcion-icono-cama-simple{
@@ -193,18 +198,21 @@ $color-fuente:#6f7c9c;
         "boton boton boton boton boton boton";
         grid-template-columns: 30% 10% 20% 10% 20% 10%;
         grid-template-rows: 20% 42% 18% 20%;
+        
 
         .tarjeta-deptos__titulo-depto-reversa{
             grid-area: titulo;
             align-self: center;
             justify-self: center;
             color: $color-fuente;
+            font-family: 'Quicksand', sans-serif;
         }
         .tarjeta-deptos__descripcion-reversa{
             grid-area: descripcion;
             align-self: center;
             text-align: center;
             color: $color-fuente;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .tarjeta-deptos__descripcion-icono-cama-simple-reversa{
@@ -278,6 +286,7 @@ $color-fuente:#6f7c9c;
     margin-left: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*segunda seccion INDEX*/
@@ -290,6 +299,7 @@ $color-fuente:#6f7c9c;
     flex-wrap: nowrap;
     justify-content: center;
     justify-content: space-evenly;
+    font-family: 'Quicksand', sans-serif;
 
     .panel-recomendaciones__foto-verano{
         margin-bottom: 30px;

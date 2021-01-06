@@ -37,6 +37,7 @@ header {
         grid-area: menu-1;
         background-color: transparent !important;
         color: #6f7c9c;
+        font-family: 'Quicksand', sans-serif;
         text-align: center;
         list-style: none;
         height: 50px;
@@ -86,6 +87,7 @@ body{
 
     p{
         font-size:13px;
+        font-family: 'Quicksand', sans-serif;
         color:#CCC;
         padding-bottom:0px;
         margin-bottom:8px;
@@ -93,6 +95,7 @@ body{
 
     .pie__titulo-blanco{
         color:#FFF;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .pie_espacio-secciones{
@@ -102,6 +105,7 @@ body{
 
     .pie__mb10{
         padding-bottom:15px ;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .pie__estilos-cuadricula{
@@ -126,10 +130,12 @@ body{
 
     .pie__links-interes{
         padding-left:300px;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .pie__paginas-amigas{
         padding-left: 300px;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .pie__menu-footer {
@@ -140,6 +146,7 @@ body{
         margin-right: auto;
         margin-bottom: 10px;
         margin-left: auto;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .pie__menu-footer li{
@@ -207,6 +214,7 @@ body{
 $ancho: 700px;
 $alto:400px;
 $marginbottom: 10px;
+$fuente:'Quicksand', sans-serif;
 
 @mixin sizes ($width, $height){
     width: $width;
