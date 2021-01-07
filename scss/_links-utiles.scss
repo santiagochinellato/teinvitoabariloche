@@ -13,30 +13,113 @@ section{
 .seccion-links{
     margin-bottom: 200px;
 
-    .seccion-links__tarjeta{
-        margin-top: 100px;
+//     .seccion-links__tarjeta{
+//         margin-top: 100px;
+//         display: grid;
+//         grid-template-areas:
+//         "mapa mapa"
+//         "titulo titulo"
+//         "icono-horario texto-horario"
+//         "icono-telefono texto-telefono"
+//         "icono-direccion texto-direccion";
+//         grid-template-columns: 50px 170px;
+//         grid-template-rows: 200px 60px 45px 45px 45px;
+//         justify-items: center;
+//         align-items: center;
+
+//         .seccion-links__tarjeta-mapa{
+//             grid-area: mapa;
+//             width: 220px;
+//             height: 200px;
+//         }
+//         .seccion-links__tarjeta-titulo-tarjeta{
+//             grid-area: titulo;
+//             text-align: center;
+//             align-self: center;
+//         }
+
+//         .seccion-links__tarjeta-horario-icono{
+//             grid-area: icono-horario;
+//             width: 20px;
+//             height: 20px;
+//         }
+//         .seccion-links__tarjeta-horario-texto{
+//             grid-area: texto-horario ;
+//             font-size: 14px;
+//             align-self: center;
+//             justify-self: start;
+//             margin-top: 17px;
+//         }
+//         .seccion-links__tarjeta-telefono-icono{
+//             grid-area: icono-telefono;
+//             width: 20px;
+//             height: 20px;
+//         }
+//         .seccion-links__tarjeta-texto-telefono{
+//             grid-area: texto-telefono;
+//             font-size: 14px;
+//             align-self: center;
+//             justify-self: start;
+//             margin-top: 17px;
+//         }
+//         .seccion-links__tarjeta-direccion-icono{
+//             grid-area: icono-direccion;
+//             width: 20px;
+//             height: 20px;
+//         }
+//         .seccion-links__tarjeta-direccion-texto{
+//             grid-area: texto-direccion;
+//             font-size: 14px;
+//             align-self: end;
+//             justify-self: start;
+//             margin-top: 20px;
+//         }
+//     }
+// }
+
+.seccion-links__tarjeta{
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+    "mapa mapa"
+    "titulo titulo";
+    grid-template-columns: 220px;
+    grid-template-rows: 200px 250px;
+    justify-items: center;
+    align-items: center;
+
+    .seccion-links__tarjeta-mapa{
+        grid-area: mapa;
+        width: 220px;
+        height: 200px;
+    }
+    .seccion-links__tarjeta-titulo-tarjeta{
+        text-align: center;
+        align-self: center;
+    }
+
+    .acordion{
+        grid-area: titulo;
+        width: 220px;
+        height: auto;
+        ;
+    }
+    .boton-colapse{
+        height: 50px;
+    }
+
+    .seccion-links-tarjeta-colapsable{
         display: grid;
-        grid-template-areas:
-        "mapa mapa"
-        "titulo titulo"
+        grid-template-areas: 
         "icono-horario texto-horario"
         "icono-telefono texto-telefono"
         "icono-direccion texto-direccion";
-        grid-template-columns: 50px 170px;
-        grid-template-rows: 200px 60px 45px 45px 45px;
+        grid-template-columns: 40px 150px;
+        grid-template-rows: 45px 45px 45px;
         justify-items: center;
         align-items: center;
+        
 
-        .seccion-links__tarjeta-mapa{
-            grid-area: mapa;
-            width: 220px;
-            height: 200px;
-        }
-        .seccion-links__tarjeta-titulo-tarjeta{
-            grid-area: titulo;
-            text-align: center;
-            align-self: center;
-        }
         .seccion-links__tarjeta-horario-icono{
             grid-area: icono-horario;
             width: 20px;
@@ -74,4 +157,14 @@ section{
             margin-top: 20px;
         }
     }
+    
+}
+}
+
+.acordion{
+    width: 200px;
+    height: 135px;
+}
+.boton-colapse{
+    height: 50px;
 }

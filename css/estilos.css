@@ -1383,11 +1383,11 @@ section {
   margin-top: 100px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
-  -ms-grid-columns: 50px 170px;
-      grid-template-columns: 50px 170px;
-  -ms-grid-rows: 200px 60px 45px 45px 45px;
-      grid-template-rows: 200px 60px 45px 45px 45px;
+      grid-template-areas: "mapa mapa" "titulo titulo";
+  -ms-grid-columns: 220px;
+      grid-template-columns: 220px;
+  -ms-grid-rows: 200px 250px;
+      grid-template-rows: 200px 250px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1404,26 +1404,49 @@ section {
 }
 
 .seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-titulo-tarjeta {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-icono {
-  -ms-grid-row: 3;
+.seccion-links .seccion-links__tarjeta .acordion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  width: 220px;
+  height: auto;
+}
+
+.seccion-links .seccion-links__tarjeta .boton-colapse {
+  height: 50px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
+  -ms-grid-columns: 40px 150px;
+      grid-template-columns: 40px 150px;
+  -ms-grid-rows: 45px 45px 45px;
+      grid-template-rows: 45px 45px 45px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-horario-icono {
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: icono-horario;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-texto {
-  -ms-grid-row: 3;
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-horario-texto {
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: texto-horario;
   font-size: 14px;
@@ -1435,16 +1458,16 @@ section {
   margin-top: 17px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-telefono-icono {
-  -ms-grid-row: 4;
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-telefono-icono {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: icono-telefono;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-texto-telefono {
-  -ms-grid-row: 4;
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-texto-telefono {
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: texto-telefono;
   font-size: 14px;
@@ -1456,16 +1479,16 @@ section {
   margin-top: 17px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-icono {
-  -ms-grid-row: 5;
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-direccion-icono {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: icono-direccion;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-texto {
-  -ms-grid-row: 5;
+.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-direccion-texto {
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: texto-direccion;
   font-size: 14px;
@@ -1475,6 +1498,15 @@ section {
   -ms-grid-column-align: start;
       justify-self: start;
   margin-top: 20px;
+}
+
+.acordion {
+  width: 200px;
+  height: 135px;
+}
+
+.boton-colapse {
+  height: 50px;
 }
 
 header {
