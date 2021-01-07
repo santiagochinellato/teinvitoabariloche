@@ -117,9 +117,9 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__titulo-depto {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   -ms-flex-item-align: center;
       align-self: center;
@@ -269,9 +269,9 @@
 }
 
 .tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__titulo-depto-reversa {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   -ms-flex-item-align: center;
       align-self: center;
@@ -586,7 +586,8 @@
 .descripcion-reservas .descripcion-reservas__ubicacion-depto {
   margin-left: 100px;
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: mapa;
 }
 
@@ -748,6 +749,7 @@
 .presentacion-recomendaciones {
   margin-top: 100px;
   margin-bottom: 100px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .presentacion-recomendaciones .presentacion-recomendaciones__titulo-principal-recomendaciones {
@@ -771,6 +773,7 @@
 
 .seccion-recomendaciones {
   margin-bottom: 200px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-acordeon {
@@ -816,9 +819,9 @@
 }
 
 .recomendaciones-naranja .recomendaciones-naranja__titulo-recomendaciones {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   margin-top: 20px;
   text-align: center;
@@ -935,9 +938,9 @@
 }
 
 .recomendaciones-rojo .recomendaciones-rojo__titulo-recomendaciones {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   margin-top: 20px;
   text-align: center;
@@ -1054,9 +1057,9 @@
 }
 
 .recomendaciones-verde .recomendaciones-verde__titulo-recomendaciones {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   margin-top: 20px;
   text-align: center;
@@ -1173,13 +1176,12 @@
 }
 
 .recomendaciones-azul .recomendaciones-azul__titulo-recomendaciones {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
   margin-top: 20px;
   text-align: center;
-  -ms-grid-column-align: stretch;
       justify-self: stretch;
   color: #6f7c9c;
 }
@@ -1258,6 +1260,7 @@
 
 .seccion-promociones {
   margin-bottom: 500px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .seccion-promociones .seccion-promociones__titulos-promociones {
@@ -1356,6 +1359,122 @@
   color: #ffffff;
   background-color: #01636D;
   border-color: #01636D;
+}
+
+section {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.titulo {
+  margin: 100px 0px 50px 0px;
+  text-align: center;
+}
+
+.subtitulos {
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+.seccion-links {
+  margin-bottom: 200px;
+}
+
+.seccion-links .seccion-links__tarjeta {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
+  -ms-grid-columns: 50px 170px;
+      grid-template-columns: 50px 170px;
+  -ms-grid-rows: 200px 60px 45px 45px 45px;
+      grid-template-rows: 200px 60px 45px 45px 45px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-mapa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mapa;
+  width: 220px;
+  height: 200px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-titulo-tarjeta {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-icono {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icono-horario;
+  width: 20px;
+  height: 20px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-texto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: texto-horario;
+  font-size: 14px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: 17px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-telefono-icono {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: icono-telefono;
+  width: 20px;
+  height: 20px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-texto-telefono {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: texto-telefono;
+  font-size: 14px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: 17px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-icono {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: icono-direccion;
+  width: 20px;
+  height: 20px;
+}
+
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-texto {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: texto-direccion;
+  font-size: 14px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: 20px;
 }
 
 header {
