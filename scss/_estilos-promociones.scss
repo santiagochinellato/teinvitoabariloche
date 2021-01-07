@@ -7,13 +7,17 @@ $color-fuente:#6f7c9c;
     
     .seccion-promociones__titulos-promociones{
         color: $color-fuente;
+        text-align: center;
+        margin: 50px 0px 50px 0px;
     }
     .seccion-promociones__texto{
         color: $color-fuente;
+        text-align: center;
     }
     .seccion-promociones__subtitulos-promociones{
         color: $color-fuente;
-        margin-bottom: 50px;
+        text-align: center;
+        margin: 50px 0px 50px 0px;
     }
 }
 
@@ -34,7 +38,7 @@ $color-fuente:#6f7c9c;
         grid-template-rows: 250px 30px 60px 40px 120px ;
         justify-content: center;
         justify-items: center;
-        background-color: #efeaee;
+        background-color: white;
     }
     .contenedor-promociones__imagen-card{
         grid-area: imagen-card;

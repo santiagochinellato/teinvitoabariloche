@@ -520,6 +520,17 @@
 /*carousel nuevo prueba*/
 /*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
 /*PRIMERA SECCION*/
+.titulo-alquiler {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.texto-alquiler {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  color: #6f7c9c;
+}
+
 .descripcion-reservas {
   border-bottom: 1px solid grey;
   padding-bottom: 50px;
@@ -753,16 +764,16 @@
 }
 
 .presentacion-recomendaciones .presentacion-recomendaciones__titulo-principal-recomendaciones {
-  margin-left: 60px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 50px 0px 50px 0px;
   color: #6f7c9c;
+  text-align: center;
 }
 
 .presentacion-recomendaciones .presentacion-recomendaciones__texto-recomendaciones {
   margin-right: 60px;
   margin-left: 60px;
   color: #6f7c9c;
+  text-align: center;
 }
 
 .btn.focus, .btn:focus {
@@ -777,7 +788,8 @@
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-acordeon {
-  background-color: #f6e58d;
+  background-color: #f3da5c;
+  text-align: center;
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones {
@@ -794,24 +806,29 @@
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__introduccion-seccion {
-  background-color: #f7eaad;
+  background-color: #f3da5c;
   color: #6f7c9c;
   margin-bottom: 40px;
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones {
   margin-top: 20px;
+  text-align: center;
+}
+
+.seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__texto-recomendaciones {
+  text-align: center;
 }
 
 .recomendaciones-naranja {
-  background-color: #f7eaad;
+  background-color: #f3da5c;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 300px 60px;
       grid-template-rows: 60px 200px 300px 60px;
-  -ms-grid-columns: 120px 60px 60px 60px;
-      grid-template-columns: 120px 60px 60px 60px;
+  -ms-grid-columns: 40% 20% 20% 20%;
+      grid-template-columns: 40% 20% 20% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -834,13 +851,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: foto;
-  width: 290px;
+  width: auto;
   height: 200px;
       justify-self: center;
 }
 
 .recomendaciones-naranja .recomendaciones-naranja__tamaño-fotos-carousel-recomendaciones {
-  width: 290px;
+  width: auto;
   height: 200px;
 }
 
@@ -850,8 +867,10 @@
   -ms-grid-column-span: 4;
   grid-area: texto;
   color: #6f7c9c;
-  margin-top: 20px;
+  width: auto;
+  margin: 20px 5px 0px 5px;
   text-align: center;
+  font-size: 15px;
       justify-self: stretch;
 }
 
@@ -896,7 +915,8 @@
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-acordeon {
-  background-color: #ff7979;
+  background-color: #9b59b6;
+  text-align: center;
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones {
@@ -913,24 +933,29 @@
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__introduccion-seccion {
-  background-color: #f39a9a;
+  background-color: #d5b4e2;
   color: #6f7c9c;
   margin-bottom: 40px;
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones {
   margin-top: 20px;
+  text-align: center;
+}
+
+.seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__texto-recomendaciones {
+  text-align: center;
 }
 
 .recomendaciones-rojo {
-  background-color: #f39a9a;
+  background-color: #d5b4e2;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 300px 60px;
       grid-template-rows: 60px 200px 300px 60px;
-  -ms-grid-columns: 120px 60px 60px 60px;
-      grid-template-columns: 120px 60px 60px 60px;
+  -ms-grid-columns: 40% 20% 20% 20%;
+      grid-template-columns: 40% 20% 20% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -953,7 +978,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: foto;
-  width: 290px;
+  width: auto;
   height: 200px;
       justify-self: center;
 }
@@ -969,8 +994,10 @@
   -ms-grid-column-span: 4;
   grid-area: texto;
   color: #6f7c9c;
-  margin-top: 20px;
+  width: auto;
+  margin: 20px 5px 0px 5px;
   text-align: center;
+  font-size: 15px;
       justify-self: stretch;
 }
 
@@ -1016,6 +1043,7 @@
 
 .seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-acordeon {
   background-color: #badc58;
+  text-align: center;
 }
 
 .seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones {
@@ -1039,6 +1067,11 @@
 
 .seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones {
   margin-top: 20px;
+  text-align: center;
+}
+
+.seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__texto-recomendaciones {
+  text-align: center;
 }
 
 .recomendaciones-verde {
@@ -1048,8 +1081,8 @@
       grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 300px 60px;
       grid-template-rows: 60px 200px 300px 60px;
-  -ms-grid-columns: 120px 60px 60px 60px;
-      grid-template-columns: 120px 60px 60px 60px;
+  -ms-grid-columns: 40% 20% 20% 20%;
+      grid-template-columns: 40% 20% 20% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1072,7 +1105,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: foto;
-  width: 290px;
+  width: auto;
   height: 200px;
       justify-self: center;
 }
@@ -1088,8 +1121,10 @@
   -ms-grid-column-span: 4;
   grid-area: texto;
   color: #6f7c9c;
-  margin-top: 20px;
+  width: auto;
+  margin: 20px 5px 0px 5px;
   text-align: center;
+  font-size: 15px;
       justify-self: stretch;
 }
 
@@ -1135,6 +1170,7 @@
 
 .seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-acordeon {
   background-color: #7ed6df;
+  text-align: center;
 }
 
 .seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones {
@@ -1158,6 +1194,11 @@
 
 .seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones {
   margin-top: 20px;
+  text-align: center;
+}
+
+.seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__texto-recomendaciones {
+  text-align: center;
 }
 
 .recomendaciones-azul {
@@ -1167,8 +1208,8 @@
       grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 300px 60px;
       grid-template-rows: 60px 200px 300px 60px;
-  -ms-grid-columns: 120px 60px 60px 60px;
-      grid-template-columns: 120px 60px 60px 60px;
+  -ms-grid-columns: 40% 20% 20% 20%;
+      grid-template-columns: 40% 20% 20% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1191,7 +1232,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: foto;
-  width: 290px;
+  width: auto;
   height: 200px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1208,8 +1249,10 @@
   -ms-grid-column-span: 4;
   grid-area: texto;
   color: #6f7c9c;
-  margin-top: 20px;
+  width: auto;
+  margin: 20px 5px 0px 5px;
   text-align: center;
+  font-size: 15px;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
 }
@@ -1265,15 +1308,19 @@
 
 .seccion-promociones .seccion-promociones__titulos-promociones {
   color: #6f7c9c;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
 }
 
 .seccion-promociones .seccion-promociones__texto {
   color: #6f7c9c;
+  text-align: center;
 }
 
 .seccion-promociones .seccion-promociones__subtitulos-promociones {
   color: #6f7c9c;
-  margin-bottom: 50px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
 }
 
 .contenedor-promociones {
@@ -1296,7 +1343,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  background-color: #efeaee;
+  background-color: white;
 }
 
 .contenedor-promociones .contenedor-promociones__imagen-card {
@@ -1371,27 +1418,34 @@ section {
 }
 
 .subtitulos {
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 0px 0px;
   text-align: center;
 }
 
+.texto {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
 .seccion-links {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  padding-left: 20px;
 }
 
 .seccion-links .seccion-links__tarjeta {
-  margin-top: 100px;
+  margin-top: 50px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "mapa mapa" "titulo titulo";
-  -ms-grid-columns: 220px;
-      grid-template-columns: 220px;
-  -ms-grid-rows: 200px 250px;
-      grid-template-rows: 200px 250px;
+      grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -ms-grid-rows: 230px 60px 45px 45px 45px;
+      grid-template-rows: 230px 60px 45px 45px 45px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: white;
 }
 
 .seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-mapa {
@@ -1399,54 +1453,35 @@ section {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: mapa;
-  width: 220px;
-  height: 200px;
+  width: 239px;
+  height: 230px;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  margin-right: 5px;
 }
 
 .seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-titulo-tarjeta {
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.seccion-links .seccion-links__tarjeta .acordion {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: titulo;
-  width: 220px;
-  height: auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 18px;
 }
 
-.seccion-links .seccion-links__tarjeta .boton-colapse {
-  height: 50px;
-}
-
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
-  -ms-grid-columns: 40px 150px;
-      grid-template-columns: 40px 150px;
-  -ms-grid-rows: 45px 45px 45px;
-      grid-template-rows: 45px 45px 45px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-horario-icono {
-  -ms-grid-row: 1;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-icono {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: icono-horario;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-horario-texto {
-  -ms-grid-row: 1;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-horario-texto {
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: texto-horario;
   font-size: 14px;
@@ -1458,16 +1493,16 @@ section {
   margin-top: 17px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-telefono-icono {
-  -ms-grid-row: 2;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-telefono-icono {
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: icono-telefono;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-texto-telefono {
-  -ms-grid-row: 2;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-texto-telefono {
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: texto-telefono;
   font-size: 14px;
@@ -1479,16 +1514,16 @@ section {
   margin-top: 17px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-direccion-icono {
-  -ms-grid-row: 3;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-icono {
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: icono-direccion;
   width: 20px;
   height: 20px;
 }
 
-.seccion-links .seccion-links__tarjeta .seccion-links-tarjeta-colapsable .seccion-links__tarjeta-direccion-texto {
-  -ms-grid-row: 3;
+.seccion-links .seccion-links__tarjeta .seccion-links__tarjeta-direccion-texto {
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: texto-direccion;
   font-size: 14px;
@@ -1498,15 +1533,6 @@ section {
   -ms-grid-column-align: start;
       justify-self: start;
   margin-top: 20px;
-}
-
-.acordion {
-  width: 200px;
-  height: 135px;
-}
-
-.boton-colapse {
-  height: 50px;
 }
 
 header {
