@@ -69,3 +69,4 @@ var galleryThumbs = new Swiper('.gallery-thumbs',{
       swiper: galleryThumbs
     }
   });
+  

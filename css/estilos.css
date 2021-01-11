@@ -7,6 +7,12 @@
 }
 
 /*primera seccion INDEX*/
+.introduccion-index__presentacion-titulo-principal-estilo {
+  margin-top: 100px;
+  text-align: center;
+  color: #2d3436;
+}
+
 .introduccion-index {
   margin: 50px 0px 50px 0px;
 }
@@ -20,24 +26,6 @@
 
 .introduccion-index .introduccion-index__video {
   width: 100%;
-}
-
-.introduccion-index .introduccion-index__presentacion-titulo-principal {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  margin-top: 100px;
-  top: 0;
-  right: 0;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .introduccion-index .introduccion-index__presentacion-texto-principal {
@@ -57,16 +45,22 @@
           justify-content: center;
   color: white;
   font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* seccion reservas*/
-.titulos {
+.titulo-reserva-index {
+  background: white;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  color: #2d3436;
+  background: white;
+  margin: 100px 0px 100px 0px;
 }
 
 .contenedor-reservas {
-  margin-left: 10px;
+  margin: 50px 0px 0px 10px;
 }
 
 .tarjeta-deptos {
@@ -84,8 +78,10 @@
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  background-color: #cee9ee;
+  background-color: white;
   margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+          box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 }
 
 .tarjeta-deptos .tarjeta-deptos__carousel-depto {
@@ -124,7 +120,7 @@
   -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
-  color: #6f7c9c;
+  color: #2d3436;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -134,9 +130,10 @@
   -ms-grid-column-span: 6;
   grid-area: descripcion;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  color: #6f7c9c;
+  color: #2d3436;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -144,6 +141,7 @@
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: icono-cama;
+  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -159,8 +157,8 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-doble {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: icono-cama-doble;
       justify-self: center;
 }
@@ -177,7 +175,7 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: icono-bano;
       justify-self: center;
@@ -210,7 +208,7 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-ubicacion-boton {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: boton;
@@ -220,171 +218,10 @@
   margin-right: 20px;
 }
 
-/*tarjeta reserva reversa*/
-.tarjeta-deptos-reversa {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "carousel-reversa titulo-depto-reversa";
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  width: 620px;
-  height: 250px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  background-color: #cee9ee;
-  margin-top: 20px;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__carousel-depto-reversa {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: carousel-reversa;
-  width: 280px;
-  height: 207px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: titulo-depto-reversa;
-  -ms-grid-row-align: center;
-      align-self: center;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
-  -ms-grid-columns: 30% 10% 20% 10% 20% 10%;
-      grid-template-columns: 30% 10% 20% 10% 20% 10%;
-  -ms-grid-rows: 20% 42% 18% 20%;
-      grid-template-rows: 20% 42% 18% 20%;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__titulo-depto-reversa {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
-  -ms-flex-item-align: center;
-      align-self: center;
-      justify-self: center;
-  color: #6f7c9c;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-reversa {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: descripcion;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  color: #6f7c9c;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: icono-cama;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-reversa .tarjeta-deptos__descripcion-icono-cama-simple--icono-reversa {
-  width: 30px;
-  height: 30px;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-simple-texto-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: icono-cama-texto;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: icono-cama-doble;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-reversa .tarjeta-deptos__descripcion-icono-cama-doble--icono-reversa {
-  width: 30px;
-  height: 30px;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-cama-doble-texto-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: icono-cama-doble-texto;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: icono-bano;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-reversa .tarjeta-deptos__descripcion-icono-bano--icono-reversa {
-  width: 25px;
-  height: 25px;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-bano-texto-reversa {
-  -ms-grid-row: 3;
-  -ms-grid-column: 6;
-  grid-area: icono-bano-texto;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion--reversa {
-  grid-area: icono-ubicacion;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion--reversa .tarjeta-deptos__descripcion-icono-ubicacion--icono-reversa {
-  width: 20px;
-  height: 20px;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion-texto-reversa {
-  grid-area: icono-ubicacion-texto;
-}
-
-.tarjeta-deptos-reversa .tarjeta-deptos__titulo-reversa .tarjeta-deptos__descripcion-icono-ubicacion-boton-reversa {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: boton;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
 .titulos {
-  background: #efeaee;
-  color: #6f7c9c;
-  margin-left: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background: white;
+  text-align: center;
+  color: #2d3436;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -417,6 +254,8 @@
   height: 366px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+          box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 }
 
 .panel-recomendaciones .panel-recomendaciones__foto-cerveza {
@@ -425,6 +264,8 @@
   height: 366px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+          box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 }
 
 .panel-recomendaciones .panel-recomendaciones__foto-lugares {
@@ -433,6 +274,8 @@
   height: 366px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+          box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 }
 
 .panel-recomendaciones .panel-recomendaciones__foto-invierno {
@@ -441,6 +284,8 @@
   height: 366px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+          box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 }
 
 .panel-recomendaciones .panel-recomendaciones__contenedor {
@@ -502,19 +347,19 @@
 }
 
 .panel-recomendaciones .panel-recomendacion__titulo-verano {
-  border-bottom: 4px solid #f6e58d;
+  border-bottom: 2px solid #f6e58d;
 }
 
 .panel-recomendaciones .panel-recomendacion__titulo-cena {
-  border-bottom: 4px solid #ff7979;
+  border-bottom: 2px solid #ff7979;
 }
 
 .panel-recomendaciones .panel-recomendacion__titulo-lugares {
-  border-bottom: 4px solid #badc58;
+  border-bottom: 2px solid #badc58;
 }
 
 .panel-recomendaciones .panel-recomendacion__titulo-invierno {
-  border-bottom: 4px solid #7ed6df;
+  border-bottom: 2px solid #7ed6df;
 }
 
 /*carousel nuevo prueba*/
@@ -532,9 +377,9 @@
 }
 
 .descripcion-reservas {
-  border-bottom: 1px solid grey;
   padding-bottom: 50px;
   font-family: 'Quicksand', sans-serif;
+  /*seccion galeria fotos*/
 }
 
 .descripcion-reservas .descripcion-reservas__titulo-depto {
@@ -544,197 +389,292 @@
   color: #6f7c9c;
 }
 
-.descripcion-reservas .descripcion-reservas__informacion-depto {
+.descripcion-reservas .descripcion-reserva-caja {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "texto-depto";
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+      grid-template-areas: "galeria-fotos texto-depto";
+  -ms-grid-rows: 520px;
+      grid-template-rows: 520px;
+  -ms-grid-columns: 44% 55%;
+      grid-template-columns: 44% 55%;
 }
 
-.descripcion-reservas .descripcion-reservas__bloque-texto {
-  width: auto;
-  height: 400px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: texto-depto;
-  margin-right: 20px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.descripcion-reservas .descripcion-reservas__titulo {
-  margin-left: 30px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #6f7c9c;
-}
-
-.descripcion-reservas .descripcion-reservas__subtitulo {
-  margin-left: 30px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #6f7c9c;
-}
-
-.descripcion-reservas .descripcion-reservas__texto-reserva {
-  margin-left: 30px;
-  color: #6f7c9c;
-}
-
-.descripcion-reservas .descripcion-reservas__mapa-galeria {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "galeria-fotos mapa";
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-}
-
-.descripcion-reservas .descripcion-reservas__ubicacion-depto {
-  margin-left: 100px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: mapa;
-}
-
-.descripcion-reservas .descripcion-reservas__titulo-ubicacion {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #6f7c9c;
-}
-
-.descripcion-reservas .descripcion-reservas__mapa-recomendacion {
-  width: 500px;
-  height: 490px;
-}
-
-.descripcion-reservas .descripcion-reservas__titulo-galeria {
-  margin-left: 60px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #6f7c9c;
-}
-
-/*seccion galeria fotos*/
-.body-galeria {
+.descripcion-reservas .body-galeria {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: galeria-fotos;
   position: relative;
-  width: 600px;
-  height: 500px;
-  background: #efeaee;
+  width: 510px;
+  height: 510px;
+  background: white;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
+  margin-left: 40px;
   padding: 0;
-  margin-left: 60px;
 }
 
-.swiper-container {
-  width: 600px;
+.descripcion-reservas .body-galeria .swiper-container {
+  width: 500px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.swiper-slide {
+.descripcion-reservas .body-galeria .swiper-slide {
   background-size: cover;
   background-position: center;
 }
 
-.gallery-top {
+.descripcion-reservas .body-galeria .gallery-top {
   height: 80%;
   width: 100%;
 }
 
-.gallery-thumbs {
+.descripcion-reservas .body-galeria .gallery-thumbs {
   height: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
 }
 
-.gallery-thumbs .swiper-slide {
+.descripcion-reservas .body-galeria .gallery-thumbs .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.9;
 }
 
-.gallery-thumbs .swiper-slide-thumb-active {
+.descripcion-reservas .body-galeria .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
 }
 
-.gallery-top2 {
+.descripcion-reservas .body-galeria .gallery-top2 {
   height: 80%;
   width: 100%;
 }
 
-.gallery-thumbs2 {
+.descripcion-reservas .body-galeria .gallery-thumbs2 {
   height: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
 }
 
-.gallery-thumbs2 .swiper-slide {
+.descripcion-reservas .body-galeria .gallery-thumbs2 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.9;
 }
 
-.gallery-thumbs2 .swiper-slide-thumb-active {
+.descripcion-reservas .body-galeria .gallery-thumbs2 .swiper-slide-thumb-active {
   opacity: 1;
 }
 
-.gallery-top3 {
+.descripcion-reservas .body-galeria .gallery-top3 {
   height: 80%;
   width: 100%;
 }
 
-.gallery-thumbs3 {
+.descripcion-reservas .body-galeria .gallery-thumbs3 {
   height: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
 }
 
-.gallery-thumbs3 .swiper-slide {
+.descripcion-reservas .body-galeria .gallery-thumbs3 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.9;
 }
 
-.gallery-thumbs3 .swiper-slide-thumb-active {
+.descripcion-reservas .body-galeria .gallery-thumbs3 .swiper-slide-thumb-active {
   opacity: 1;
 }
 
-.gallery-top4 {
+.descripcion-reservas .body-galeria .gallery-top4 {
   height: 80%;
   width: 100%;
 }
 
-.gallery-thumbs4 {
+.descripcion-reservas .body-galeria .gallery-thumbs4 {
   height: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
 }
 
-.gallery-thumbs4 .swiper-slide {
+.descripcion-reservas .body-galeria .gallery-thumbs4 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.9;
 }
 
-.gallery-thumbs4 .swiper-slide-thumb-active {
+.descripcion-reservas .body-galeria .gallery-thumbs4 .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.descripcion-reservas .descripcion-reservas__informacion-depto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "texto-depto texto-depto" "mapa detalles";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 65% 35%;
+      grid-template-rows: 65% 35%;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: texto-depto;
+  width: auto;
+  height: 400px;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__titulo {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__subtitulo {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__texto-reserva {
+  margin-left: 30px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__mapa-recomendacion {
+  width: 500px;
+  height: 490px;
+}
+
+.descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__titulo-galeria {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas__ubicacion-depto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mapa;
+  margin-left: 30px;
+}
+
+.descripcion-reservas__ubicacion-depto .descripcion-reservas__mapa-recomendacion {
+  width: 250px;
+  height: 115px;
+}
+
+.descripcion-reservas__ubicacion-depto .descripcion-reservas__titulo-ubicacion {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #6f7c9c;
+}
+
+.descripcion-reservas__depto-detalles {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: detalles;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano" "boton boton boton boton boton boton";
+  -ms-grid-columns: 20% 10% 10% 10% 10% 40%;
+      grid-template-columns: 20% 10% 10% 10% 10% 40%;
+  -ms-grid-rows: 50% 40%;
+      grid-template-rows: 50% 40%;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__boton-reservas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: boton;
+  width: 150px;
+  height: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 100px;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-cama-doble {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icono-cama-doble;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-texto-cama-doble {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: texto-cama-doble;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-cama-simple {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icono-cama-simple;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-texto-cama-simple {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: texto-cama-simple;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-bano {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: icono-bano;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-bano-texto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: texto-bano;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /*segunda seccion "reservas"*/
@@ -749,12 +689,9 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-.formulario {
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 50px;
-  background: #018599;
-  color: #efeaee;
+.formulario-contacto {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .presentacion-recomendaciones {
@@ -1617,7 +1554,7 @@ header .header-menu__ul li a:hover {
 }
 
 body {
-  background: #efeaee;
+  background: white;
 }
 
 /*footer*/

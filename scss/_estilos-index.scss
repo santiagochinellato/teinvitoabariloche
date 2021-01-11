@@ -1,6 +1,12 @@
 $color: #efeaee;
-$color-fuente:#6f7c9c;
+$color-fuente:#2d3436;
 /*primera seccion INDEX*/
+
+.introduccion-index__presentacion-titulo-principal-estilo{
+    margin-top: 100px;
+    text-align: center;
+    color: $color-fuente;
+}
 
 .introduccion-index{
     margin: 50px 0px 50px 0px;
@@ -15,20 +21,6 @@ $color-fuente:#6f7c9c;
         width: 100%;
     }
 
-    .introduccion-index__presentacion-titulo-principal{
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        margin-top: 100px;
-        top: 0;
-        right: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-
-    }
     .introduccion-index__presentacion-texto-principal{
         position: absolute;
         width: 100%;
@@ -42,15 +34,21 @@ $color-fuente:#6f7c9c;
         justify-content: center;
         color: white;
         font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 }
 /* seccion reservas*/
-.titulos{
+.titulo-reserva-index{
+    background: white;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    color: $color-fuente;
+    background:white;
+    margin: 100px 0px 100px 0px;
 }
 .contenedor-reservas{
-    margin-left: 10px;
+    margin: 50px 0px 0px 10px;
 }
 .tarjeta-deptos{
     display: grid;
@@ -62,8 +60,9 @@ $color-fuente:#6f7c9c;
     height: 250px;
     align-items: center;
     align-content: space-around;
-    background-color: #cee9ee;
+    background-color: white;
     margin-top: 20px;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .tarjeta-deptos__carousel-depto{
         grid-area: carousel;
@@ -164,128 +163,11 @@ $color-fuente:#6f7c9c;
     }
 }
 
-/*tarjeta reserva reversa*/
-
-.tarjeta-deptos-reversa{
-    display: grid;
-    grid-template-areas: 
-    "carousel-reversa titulo-depto-reversa";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    width: 620px;
-    height: 250px;
-    align-items: center;
-    align-content: space-around;
-    background-color:#cee9ee;
-    margin-top: 20px;
-
-    .tarjeta-deptos__carousel-depto-reversa{
-        grid-area: carousel-reversa;
-        width: 280px;
-        height: 207px;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .tarjeta-deptos__titulo-reversa{
-        grid-area: titulo-depto-reversa ;
-        align-self: center;
-        display: grid;
-        grid-template-areas: 
-        "titulo titulo titulo titulo titulo titulo"
-        "descripcion descripcion descripcion descripcion descripcion descripcion"
-        "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto"
-        "boton boton boton boton boton boton";
-        grid-template-columns: 30% 10% 20% 10% 20% 10%;
-        grid-template-rows: 20% 42% 18% 20%;
-        
-
-        .tarjeta-deptos__titulo-depto-reversa{
-            grid-area: titulo;
-            align-self: center;
-            justify-self: center;
-            color: $color-fuente;
-            font-family: 'Quicksand', sans-serif;
-        }
-        .tarjeta-deptos__descripcion-reversa{
-            grid-area: descripcion;
-            align-self: center;
-            text-align: center;
-            color: $color-fuente;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        .tarjeta-deptos__descripcion-icono-cama-simple-reversa{
-            grid-area: icono-cama ;
-            justify-self: center;
-
-            .tarjeta-deptos__descripcion-icono-cama-simple--icono-reversa{
-                width: 30px;
-                height: 30px;
-            }
-        }
-        .tarjeta-deptos__descripcion-icono-cama-simple-texto-reversa{
-            grid-area: icono-cama-texto ;
-        }
-
-        .tarjeta-deptos__descripcion-icono-cama-doble-reversa{
-            grid-area: icono-cama-doble;
-            justify-self: center;
-
-            .tarjeta-deptos__descripcion-icono-cama-doble--icono-reversa{
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        .tarjeta-deptos__descripcion-icono-cama-doble-texto-reversa{
-            grid-area: icono-cama-doble-texto;
-        }
-
-        .tarjeta-deptos__descripcion-icono-bano-reversa{
-            grid-area: icono-bano;
-            justify-self: center;
-
-            .tarjeta-deptos__descripcion-icono-bano--icono-reversa{
-                width: 25px;
-                height: 25px;
-            }
-        }
-
-        .tarjeta-deptos__descripcion-icono-bano-texto-reversa{
-            grid-area: icono-bano-texto;
-        }
-
-        .tarjeta-deptos__descripcion-icono-ubicacion--reversa{
-            grid-area: icono-ubicacion;
-            justify-self: center;
-
-            .tarjeta-deptos__descripcion-icono-ubicacion--icono-reversa{
-                width: 20px;
-                height: 20px;
-            }
-        }
-
-        .tarjeta-deptos__descripcion-icono-ubicacion-texto-reversa{
-            grid-area: icono-ubicacion-texto;
-        }
-
-        .tarjeta-deptos__descripcion-icono-ubicacion-boton-reversa{
-            grid-area: boton;
-            justify-self: start;
-            align-self: end;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-    }
-}
 .titulos
 /*comparte con segunda seccion*/ {
-    background: #efeaee;
-    color: #6f7c9c;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background: white;
+    text-align: center;
+    color:$color-fuente;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -306,12 +188,14 @@ $color-fuente:#6f7c9c;
         width: 100%;
         height: 366px;
         object-fit: cover;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
     .panel-recomendaciones__foto-cerveza{
         margin-bottom: 30px;
         width: 100%;
         height: 366px;
         object-fit: cover;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .panel-recomendaciones__foto-lugares{
@@ -319,6 +203,7 @@ $color-fuente:#6f7c9c;
         width: 100%;
         height: 366px;
         object-fit: cover;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .panel-recomendaciones__foto-invierno{
@@ -326,6 +211,7 @@ $color-fuente:#6f7c9c;
         width: 100%;
         height: 366px;
         object-fit: cover;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .panel-recomendaciones__contenedor{
@@ -378,19 +264,19 @@ $color-fuente:#6f7c9c;
         transition: 0.4s;
     }
     .panel-recomendacion__titulo-verano{
-        border-bottom:4px solid #f6e58d;
+        border-bottom:2px solid #f6e58d;
     }
 
     .panel-recomendacion__titulo-cena{
-        border-bottom:4px solid #ff7979;
+        border-bottom:2px solid #ff7979;
     }
 
     .panel-recomendacion__titulo-lugares{
-        border-bottom:4px solid #badc58;
+        border-bottom:2px solid #badc58;
     }
 
     .panel-recomendacion__titulo-invierno{
-        border-bottom:4px solid #7ed6df;
+        border-bottom:2px solid #7ed6df;
     }
 }
 
