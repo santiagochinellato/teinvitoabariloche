@@ -39,7 +39,7 @@
   padding: 0px 150px 0px 150px;
   top: 0;
   right: 0;
-  text-align: justify;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +189,8 @@
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano .tarjeta-deptos__descripcion-icono-bano--icono {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-bano-texto {
