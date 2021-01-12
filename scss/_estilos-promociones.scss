@@ -1,5 +1,5 @@
 $color: #efeaee;
-$color-fuente:#6f7c9c;
+$color-fuente:#2d3436;
 
 .seccion-promociones{
     margin-bottom: 500px;
@@ -34,17 +34,19 @@ $color-fuente:#6f7c9c;
         "texto-card"
         "texto-bases"
         "boton-card";
-        grid-template-columns: 200px;
+        grid-template-columns: 250px;
         grid-template-rows: 250px 30px 60px 40px 120px ;
         justify-content: center;
         justify-items: center;
         background-color: white;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
     .contenedor-promociones__imagen-card{
         grid-area: imagen-card;
-        width: 248px;
+        width: 249px;
         height: 250px;
         justify-self: center;
+        
     }
     .contenedor-promociones__titulo-card{
         grid-area: titulo-card;
@@ -78,7 +80,8 @@ $color-fuente:#6f7c9c;
     }
     .btn-primary { 
         color: #ffffff; 
-        background-color: #01636D; 
-        border-color: #01636D; 
+        width: 200px;
+        background-color:#138496; 
+        border-color: #138496; 
     }
 }

@@ -9,18 +9,18 @@
 
 .texto-alquiler{
     text-align: center;
-    margin: 0px 0px 50px 0px;
-    color: #6f7c9c;
+    margin: 0px 0px 100px 0px;
+    color: #2d3436;
 }
 .descripcion-reservas{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     font-family: 'Quicksand', sans-serif;
 
     .descripcion-reservas__titulo-depto{
         margin-left: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         margin-top: 40px;
-        color: #6f7c9c;
+        color: #2d3436;
     }
 
     .descripcion-reserva-caja{
@@ -158,19 +158,19 @@
         .descripcion-reservas__titulo{
             margin-left: 30px;
             margin-bottom: 10px;
-            color: #6f7c9c;
+            color: #2d3436;
         }
 
         .descripcion-reservas__subtitulo{
             margin-left: 30px;
             margin-bottom: 10px;
             margin-top: 10px;
-            color: #6f7c9c;
+            color: #2d3436;
         }
 
         .descripcion-reservas__texto-reserva {
             margin-left: 30px;
-            color: #6f7c9c;
+            color: #2d3436;
         }
 
         .descripcion-reservas__mapa-recomendacion{
@@ -182,7 +182,7 @@
             margin-left: 60px;
             margin-bottom: 10px;
             margin-top: 10px;
-            color: #6f7c9c;
+            color: #2d3436;
         }
 
 }
@@ -200,7 +200,7 @@
     .descripcion-reservas__titulo-ubicacion{
         margin-bottom: 10px;
         margin-top: 10px;
-        color: #6f7c9c;
+        color: #2d3436;
     }
 }
 
@@ -216,7 +216,7 @@
     .descripcion-reservas__boton-reservas{
         grid-area: boton;
         width: 150px;
-        height: 50px;
+        height: 40px;
         justify-self: center;
         align-self: center;
         margin-right: 100px;
@@ -275,18 +275,34 @@
 /*segunda seccion "reservas"*/
 
 .titulo-alquiler{
-color: #6f7c9c;
+color: #2d3436;
 }
 
 /*seccion formulario*/
 
-.segunda-seccion {
-background:#018599;
-color: #efeaee;
-font-family: 'Quicksand', sans-serif;
+.formulario-reservas{
+    margin-bottom: 100px;
 }
 
-.formulario-contacto{
-    align-content: center;
+.formulario-caja{
+    align-items: center;
+}
+
+.formulario {
+    color: #2d3436;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #17A2B8 ;
+}
+.casilla-formulario{
+    margin-left: 175px;
+}
+
+.boton-formulario{
+    color: #17A2B8 !important;
 }
 

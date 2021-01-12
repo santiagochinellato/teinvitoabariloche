@@ -33,6 +33,7 @@ section{
         justify-items: center;
         align-items: center;
         background: white;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
         .seccion-links__tarjeta-mapa{
             grid-area: mapa;

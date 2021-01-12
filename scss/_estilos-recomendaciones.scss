@@ -1,6 +1,10 @@
 
-$color: #efeaee;
-$color-fuente:#6f7c9c;
+$color: withe;
+$color-fuente:#2d3436;
+
+body{
+    background: white;
+}
 
 .presentacion-recomendaciones{
     margin-top: 100px;
@@ -33,7 +37,7 @@ $color-fuente:#6f7c9c;
 .seccion-recomendacion-verano-naranja{
 
     .seccion-recomendaciones-verano-naranja__titulo-acordeon{
-        background-color:  #f3da5c;
+        background-color:  #ea8685;
         text-align: center;
         
     }
@@ -52,9 +56,10 @@ $color-fuente:#6f7c9c;
     }
 
     .seccion-recomendaciones-verano-naranja__introduccion-seccion{
-        background-color:  #f3da5c ;
+        background-color: white ;
         color: $color-fuente;
         margin-bottom: 40px;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones{
@@ -68,16 +73,18 @@ $color-fuente:#6f7c9c;
 
 
 .recomendaciones-naranja{
-    background-color:  #f3da5c;
+    background-color:  white;
     display: grid;
     grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
+    "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-naranja__titulo-recomendaciones{
         grid-area: titulo;
@@ -99,11 +106,16 @@ $color-fuente:#6f7c9c;
         height: 200px;
     }
 
+    .recomendaciones-naranja__subtitulo-tarjeta{
+        grid-area: subtitulo;
+        text-align: center;
+        align-self: end;
+    }
     .recomendaciones-naranja__texto-recomendaciones{
         grid-area: texto;
         color: $color-fuente ;
         width: auto;
-        margin:20px 5px 0px 5px;
+        margin:20px 20px 0px 20px;
         text-align: center;
         font-size: 15px;
         justify-self: stretch;
@@ -162,9 +174,10 @@ $color-fuente:#6f7c9c;
     }
 
     .seccion-recomendacion-cena-rojo__introduccion-seccion{
-        background-color:#d5b4e2;
+        background-color:white;
         color: $color-fuente;
         margin-bottom: 40px;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones{
@@ -177,16 +190,18 @@ $color-fuente:#6f7c9c;
 }
 
 .recomendaciones-rojo{
-    background-color: #d5b4e2;
+    background-color:  white;
     display: grid;
     grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
+    "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-rojo__titulo-recomendaciones{
         grid-area: titulo;
@@ -208,11 +223,17 @@ $color-fuente:#6f7c9c;
         height: 200px;
     }
 
+    .recomendaciones-rojo__subtitulo-tarjeta{
+        grid-area: subtitulo;
+        text-align: center;
+        align-self: end;
+    }
+
     .recomendaciones-rojo__texto-recomendaciones{
         grid-area: texto;
         color: $color-fuente ;
         width: auto;
-        margin:20px 5px 0px 5px;
+        margin:20px 20px 0px 20px;
         text-align: center;
         font-size: 15px;
         justify-self: stretch;
@@ -272,9 +293,10 @@ $color-fuente:#6f7c9c;
     }
 
     .seccion-recomendacion-lugares-verde__introduccion-seccion{
-        background-color: #cbe482;
+        background-color: white;
         color: $color-fuente;
         margin-bottom: 40px;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones{
@@ -287,16 +309,18 @@ $color-fuente:#6f7c9c;
 }
 
 .recomendaciones-verde{
-    background-color: #cbe482;
+    background-color:  white;
     display: grid;
     grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
+    "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-verde__titulo-recomendaciones{
         grid-area: titulo;
@@ -318,11 +342,17 @@ $color-fuente:#6f7c9c;
         height: 200px;
     }
 
+    .recomendaciones-verde__subtitulo-tarjeta{
+        grid-area: subtitulo;
+        text-align: center;
+        align-self: end;
+    }
+
     .recomendaciones-verde__texto-recomendaciones{
         grid-area: texto;
         color: $color-fuente ;
         width: auto;
-        margin:20px 5px 0px 5px;
+        margin:20px 20px 0px 20px;
         text-align: center;
         font-size: 15px;
         justify-self: stretch;
@@ -383,9 +413,10 @@ $color-fuente:#6f7c9c;
     }
 
     .seccion-recomendacion-invierno-azul__introduccion-seccion{
-        background-color: #9bd5db;
+        background-color: white;
         color: $color-fuente;
         margin-bottom: 40px;
+        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
     }
 
     .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones{
@@ -399,16 +430,18 @@ $color-fuente:#6f7c9c;
 }
 
 .recomendaciones-azul{
-    background-color: #9bd5db;
+    background-color:  white;
     display: grid;
     grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
+    "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 300px 60px;
+    grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-azul__titulo-recomendaciones{
         grid-area: titulo;
@@ -430,11 +463,17 @@ $color-fuente:#6f7c9c;
         height: 200px;
     }
 
+    .recomendaciones-azul__subtitulo-tarjeta{
+        grid-area: subtitulo;
+        text-align: center;
+        align-self: end;
+    }
+
     .recomendaciones-azul__texto-recomendaciones{
         grid-area: texto;
         color: $color-fuente ;
         width: auto;
-        margin:20px 5px 0px 5px;
+        margin:20px 20px 0px 20px;
         text-align: center;
         font-size: 15px;
         justify-self: stretch;
