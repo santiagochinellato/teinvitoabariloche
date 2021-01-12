@@ -2,22 +2,25 @@ $color: #efeaee;
 $color-fuente:#2d3436;
 
 .seccion-promociones{
-    margin-bottom: 500px;
+    margin-bottom: 100px;
     font-family: 'Quicksand', sans-serif;
     
     .seccion-promociones__titulos-promociones{
-        color: $color-fuente;
+        margin-top: 100px;
+        margin-bottom: 110px;
         text-align: center;
-        margin: 50px 0px 50px 0px;
+        color: $color-fuente;
+        font-size: 40px;
+        border-bottom: 1px solid#a1a7aa;
     }
     .seccion-promociones__texto{
         color: $color-fuente;
-        text-align: center;
+        text-align: justify;
     }
     .seccion-promociones__subtitulos-promociones{
         color: $color-fuente;
         text-align: center;
-        margin: 50px 0px 50px 0px;
+        margin: 100px 0px 50px 0px;
     }
 }
 
@@ -54,6 +57,7 @@ $color-fuente:#2d3436;
         text-align: center;
         margin: 10px 0px 0px 10px;
         color: $color-fuente;
+        font-weight: bold;
     }
     .contenedor-promociones__texto-card{
         grid-area: texto-card;
@@ -70,6 +74,7 @@ $color-fuente:#2d3436;
         text-align: center;
         justify-self: center;
         margin: 10px 0px 5px 0px;
+        font-style: oblique;
     }
     .contenedor-promociones__boton-card{
         grid-area: boton-card;

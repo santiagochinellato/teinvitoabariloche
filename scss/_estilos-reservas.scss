@@ -3,13 +3,17 @@
 /*PRIMERA SECCION*/
 
 .titulo-alquiler{
+    margin-top: 100px;
+    margin-bottom: 110px;
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    color: $color-fuente;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
 }
 
 .texto-alquiler{
-    text-align: center;
-    margin: 0px 0px 100px 0px;
+    margin-bottom: 100px;
+    text-align: justify;
     color: #2d3436;
 }
 .descripcion-reservas{
@@ -171,6 +175,7 @@
         .descripcion-reservas__texto-reserva {
             margin-left: 30px;
             color: #2d3436;
+            text-align: justify;
         }
 
         .descripcion-reservas__mapa-recomendacion{
@@ -289,9 +294,12 @@ color: #2d3436;
 }
 
 .formulario {
-    color: #2d3436;
-    font-size: 27px;
-    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 110px;
+    text-align: center;
+    color: $color-fuente;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
 }
 
 .bigicon {

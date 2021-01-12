@@ -84,6 +84,7 @@ body{
 
     width:100%;
     background-color:#263238;
+    min-width: 320px;
     min-height:250px;
     padding:10px 0px 25px 0px ;
 
@@ -131,12 +132,12 @@ body{
     }
 
     .pie__links-interes{
-        padding-left:300px;
+        // padding-left:300px;
         font-family: 'Quicksand', sans-serif;
     }
 
     .pie__paginas-amigas{
-        padding-left: 300px;
+        // padding-left: 300px;
         font-family: 'Quicksand', sans-serif;
     }
 

@@ -9,8 +9,11 @@
 /*primera seccion INDEX*/
 .introduccion-index__presentacion-titulo-principal-estilo {
   margin-top: 100px;
+  margin-bottom: 110px;
   text-align: center;
   color: #2d3436;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .introduccion-index {
@@ -36,7 +39,7 @@
   padding: 0px 150px 0px 150px;
   top: 0;
   right: 0;
-  text-align: center;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,18 +48,19 @@
           justify-content: center;
   color: white;
   font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 /* seccion reservas*/
-.titulo-reserva-index {
+.titulos-reserva-index {
   background: white;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #2d3436;
   background: white;
-  margin: 100px 0px 50px 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .contenedor-reservas {
@@ -122,6 +126,8 @@
       justify-self: center;
   color: #2d3436;
   font-family: 'Quicksand', sans-serif;
+  font-size: 23px;
+  margin: 0px 15px 0px 15px;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion {
@@ -132,9 +138,10 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  text-align: center;
+  text-align: justify;
   color: #2d3436;
   font-family: 'Quicksand', sans-serif;
+  margin: 10px 25px 10px 25px;
 }
 
 .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__descripcion-icono-cama-simple {
@@ -223,6 +230,8 @@
   text-align: center;
   color: #2d3436;
   font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 /*segunda seccion INDEX*/
@@ -246,6 +255,10 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-family: 'Quicksand', sans-serif;
+}
+
+.panel-recomendaciones .panel-recomendaciones__texto-index {
+  text-align: justify;
 }
 
 .panel-recomendaciones .panel-recomendaciones__foto-verano {
@@ -366,13 +379,17 @@
 /*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
 /*PRIMERA SECCION*/
 .titulo-alquiler {
+  margin-top: 100px;
+  margin-bottom: 110px;
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  color: #2d3436;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .texto-alquiler {
-  text-align: center;
-  margin: 0px 0px 100px 0px;
+  margin-bottom: 100px;
+  text-align: justify;
   color: #2d3436;
 }
 
@@ -550,6 +567,7 @@
 .descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__texto-reserva {
   margin-left: 30px;
   color: #2d3436;
+  text-align: justify;
 }
 
 .descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__mapa-recomendacion {
@@ -694,9 +712,12 @@
 }
 
 .formulario {
+  margin-top: 100px;
+  margin-bottom: 110px;
+  text-align: center;
   color: #2d3436;
-  font-size: 27px;
-  padding: 10px;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .bigicon {
@@ -723,16 +744,19 @@ body {
 }
 
 .presentacion-recomendaciones .presentacion-recomendaciones__titulo-principal-recomendaciones {
-  margin: 50px 0px 50px 0px;
-  color: #2d3436;
+  margin-top: 100px;
+  margin-bottom: 110px;
   text-align: center;
+  color: #2d3436;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .presentacion-recomendaciones .presentacion-recomendaciones__texto-recomendaciones {
   margin-right: 60px;
   margin-left: 60px;
   color: #2d3436;
-  text-align: center;
+  text-align: justify;
 }
 
 .btn.focus, .btn:focus {
@@ -778,7 +802,7 @@ body {
 }
 
 .seccion-recomendacion-verano-naranja .seccion-recomendaciones-verano-naranja__texto-recomendaciones {
-  text-align: center;
+  text-align: justify;
 }
 
 .recomendaciones-naranja {
@@ -793,6 +817,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
           box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
   /*fotos carousel recomendaciones*/
@@ -842,7 +867,7 @@ body {
   color: #2d3436;
   width: auto;
   margin: 20px 20px 0px 20px;
-  text-align: center;
+  text-align: justify;
   font-size: 15px;
       justify-self: stretch;
 }
@@ -885,6 +910,7 @@ body {
   margin-top: 20px;
   text-align: center;
       justify-self: stretch;
+  font-style: oblique;
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__titulo-acordeon {
@@ -919,7 +945,7 @@ body {
 }
 
 .seccion-recomendacion-cena-rojo .seccion-recomendacion-cena-rojo__texto-recomendaciones {
-  text-align: center;
+  text-align: justify;
 }
 
 .recomendaciones-rojo {
@@ -934,6 +960,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
           box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
   /*fotos carousel recomendaciones*/
@@ -983,7 +1010,7 @@ body {
   color: #2d3436;
   width: auto;
   margin: 20px 20px 0px 20px;
-  text-align: center;
+  text-align: justify;
   font-size: 15px;
       justify-self: stretch;
 }
@@ -1026,6 +1053,7 @@ body {
   margin-top: 20px;
   text-align: center;
       justify-self: stretch;
+  font-style: oblique;
 }
 
 .seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__titulo-acordeon {
@@ -1060,7 +1088,7 @@ body {
 }
 
 .seccion-recomendacion-lugares-verde .seccion-recomendacion-lugares-verde__texto-recomendaciones {
-  text-align: center;
+  text-align: justify;
 }
 
 .recomendaciones-verde {
@@ -1075,6 +1103,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
           box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
   /*fotos carousel recomendaciones*/
@@ -1124,7 +1153,7 @@ body {
   color: #2d3436;
   width: auto;
   margin: 20px 20px 0px 20px;
-  text-align: center;
+  text-align: justify;
   font-size: 15px;
       justify-self: stretch;
 }
@@ -1167,6 +1196,7 @@ body {
   margin-top: 20px;
   text-align: center;
       justify-self: stretch;
+  font-style: oblique;
 }
 
 .seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__titulo-acordeon {
@@ -1201,7 +1231,7 @@ body {
 }
 
 .seccion-recomendacion-invierno-azul .seccion-recomendacion-invierno-azul__texto-recomendaciones {
-  text-align: center;
+  text-align: justify;
 }
 
 .recomendaciones-azul {
@@ -1216,6 +1246,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
           box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
   /*fotos carousel recomendaciones*/
@@ -1267,7 +1298,7 @@ body {
   color: #2d3436;
   width: auto;
   margin: 20px 20px 0px 20px;
-  text-align: center;
+  text-align: justify;
   font-size: 15px;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
@@ -1315,28 +1346,32 @@ body {
   text-align: center;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
+  font-style: oblique;
 }
 
 .seccion-promociones {
-  margin-bottom: 500px;
+  margin-bottom: 100px;
   font-family: 'Quicksand', sans-serif;
 }
 
 .seccion-promociones .seccion-promociones__titulos-promociones {
-  color: #2d3436;
+  margin-top: 100px;
+  margin-bottom: 110px;
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  color: #2d3436;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .seccion-promociones .seccion-promociones__texto {
   color: #2d3436;
-  text-align: center;
+  text-align: justify;
 }
 
 .seccion-promociones .seccion-promociones__subtitulos-promociones {
   color: #2d3436;
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  margin: 100px 0px 50px 0px;
 }
 
 .contenedor-promociones {
@@ -1383,6 +1418,7 @@ body {
   text-align: center;
   margin: 10px 0px 0px 10px;
   color: #2d3436;
+  font-weight: bold;
 }
 
 .contenedor-promociones .contenedor-promociones__texto-card {
@@ -1407,6 +1443,7 @@ body {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 10px 0px 5px 0px;
+  font-style: oblique;
 }
 
 .contenedor-promociones .contenedor-promociones__boton-card {
@@ -1429,21 +1466,27 @@ body {
 
 section {
   font-family: 'Quicksand', sans-serif;
+  margin-bottom: 100px;
 }
 
 .titulo {
-  margin: 100px 0px 50px 0px;
+  margin-top: 100px;
+  margin-bottom: 110px;
   text-align: center;
+  color: #2d3436;
+  font-size: 40px;
+  border-bottom: 1px solid #a1a7aa;
 }
 
 .subtitulos {
-  margin: 50px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   text-align: center;
 }
 
 .texto {
   text-align: center;
   margin: 50px 0px 50px 0px;
+  text-align: justify;
 }
 
 .seccion-links {
@@ -1505,7 +1548,7 @@ section {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: texto-horario;
-  font-size: 14px;
+  font-size: 12px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1526,7 +1569,7 @@ section {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: texto-telefono;
-  font-size: 14px;
+  font-size: 12px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1547,7 +1590,7 @@ section {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: texto-direccion;
-  font-size: 14px;
+  font-size: 12px;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -1645,6 +1688,7 @@ body {
 .pie {
   width: 100%;
   background-color: #263238;
+  min-width: 320px;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
@@ -1693,12 +1737,10 @@ body {
 }
 
 .pie .pie__links-interes {
-  padding-left: 300px;
   font-family: 'Quicksand', sans-serif;
 }
 
 .pie .pie__paginas-amigas {
-  padding-left: 300px;
   font-family: 'Quicksand', sans-serif;
 }
 

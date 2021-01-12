@@ -12,15 +12,18 @@ body{
     font-family: 'Quicksand', sans-serif;
 
     .presentacion-recomendaciones__titulo-principal-recomendaciones{
-        margin: 50px 0px 50px 0px;
-        color: $color-fuente;
+        margin-top: 100px;
+        margin-bottom: 110px;
         text-align: center;
+        color: $color-fuente;
+        font-size: 40px;
+        border-bottom: 1px solid#a1a7aa;
     }
     .presentacion-recomendaciones__texto-recomendaciones{
         margin-right: 60px;
         margin-left: 60px;
         color: $color-fuente;
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -67,7 +70,7 @@ body{
         text-align: center;
     }
     .seccion-recomendaciones-verano-naranja__texto-recomendaciones{
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -84,6 +87,7 @@ body{
     grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    margin-top: 20px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-naranja__titulo-recomendaciones{
@@ -116,7 +120,7 @@ body{
         color: $color-fuente ;
         width: auto;
         margin:20px 20px 0px 20px;
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         justify-self: stretch;
     }
@@ -150,6 +154,7 @@ body{
         margin-top: 20px;
         text-align: center;
         justify-self: stretch;
+        font-style: oblique;
     }
 }
 
@@ -185,7 +190,7 @@ body{
         text-align: center;
     }
     .seccion-recomendacion-cena-rojo__texto-recomendaciones{
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -201,6 +206,7 @@ body{
     grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    margin-top: 20px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-rojo__titulo-recomendaciones{
@@ -234,7 +240,7 @@ body{
         color: $color-fuente ;
         width: auto;
         margin:20px 20px 0px 20px;
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         justify-self: stretch;
     }
@@ -268,6 +274,7 @@ body{
         margin-top: 20px;
         text-align: center;
         justify-self: stretch;
+        font-style: oblique;
     }
 }
 
@@ -304,7 +311,7 @@ body{
         text-align: center;
     }
     .seccion-recomendacion-lugares-verde__texto-recomendaciones{
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -320,6 +327,7 @@ body{
     grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    margin-top: 20px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-verde__titulo-recomendaciones{
@@ -353,7 +361,7 @@ body{
         color: $color-fuente ;
         width: auto;
         margin:20px 20px 0px 20px;
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         justify-self: stretch;
     }
@@ -387,6 +395,7 @@ body{
         margin-top: 20px;
         text-align: center;
         justify-self: stretch;
+        font-style: oblique;
     }
 }
 
@@ -425,7 +434,7 @@ body{
     }
 
     .seccion-recomendacion-invierno-azul__texto-recomendaciones{
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -441,6 +450,7 @@ body{
     grid-template-rows: 60px 200px 50px 250px 60px;
     grid-template-columns: 40% 20% 20% 20%;
     justify-content: center;
+    margin-top: 20px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
 
     .recomendaciones-azul__titulo-recomendaciones{
@@ -474,7 +484,7 @@ body{
         color: $color-fuente ;
         width: auto;
         margin:20px 20px 0px 20px;
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         justify-self: stretch;
     }
@@ -508,5 +518,6 @@ body{
         margin-top: 20px;
         text-align: center;
         justify-self: stretch;
+        font-style: oblique;
     }
 }

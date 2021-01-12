@@ -4,8 +4,11 @@ $color-fuente:#2d3436;
 
 .introduccion-index__presentacion-titulo-principal-estilo{
     margin-top: 100px;
+    margin-bottom: 110px;
     text-align: center;
     color: $color-fuente;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
 }
 
 .introduccion-index{
@@ -29,23 +32,24 @@ $color-fuente:#2d3436;
         padding: 0px 150px 0px 150px;
         top: 0;
         right: 0;
-        text-align: center;
+        text-align: justify;
         display: flex;
         justify-content: center;
         color: white;
         font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-        letter-spacing: 2px;
     }
 }
 /* seccion reservas*/
-.titulo-reserva-index{
+.titulos-reserva-index{
     background: white;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: $color-fuente;
     background:white;
-    margin: 100px 0px 50px 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
 }
 .contenedor-reservas{
     margin: 0px 0px 100px 0px;
@@ -90,13 +94,16 @@ $color-fuente:#2d3436;
             justify-self: center;
             color: $color-fuente;
             font-family: 'Quicksand', sans-serif;
+            font-size: 23px;
+            margin: 0px 15px 0px 15px;
         }
         .tarjeta-deptos__descripcion{
             grid-area: descripcion;
             align-self: center;
-            text-align: center;
+            text-align: justify;
             color: $color-fuente;
             font-family: 'Quicksand', sans-serif;
+            margin:10px 25px 10px 25px ;
         }
 
         .tarjeta-deptos__descripcion-icono-cama-simple{
@@ -169,6 +176,8 @@ $color-fuente:#2d3436;
     text-align: center;
     color:$color-fuente;
     font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
 }
 
 /*segunda seccion INDEX*/
@@ -182,6 +191,10 @@ $color-fuente:#2d3436;
     justify-content: center;
     justify-content: space-evenly;
     font-family: 'Quicksand', sans-serif;
+
+    .panel-recomendaciones__texto-index{
+        text-align: justify;
+    }
 
     .panel-recomendaciones__foto-verano{
         margin-bottom: 30px;
