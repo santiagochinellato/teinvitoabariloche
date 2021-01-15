@@ -23,30 +23,29 @@
   <link rel="icon" type="image/png" href="./images/logo.png" />
 </head>
 <header class="header">
-  <img class="header__logo" class="img-responsive" src="./images/logo.png" alt="logo" />
-  <nav class="nav-menu navbar navbar-expand-lg navbar-light bg-light navbar-nav m-auto header__menu">
-    <button class="navbar-toggler button float-left" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon header__hamburguesa"></span>
+  <img class="header__logo" class="img-responsive" src="./images/logo.png" alt="logo">
+  <nav id="menu" class="nav-menu fixed-top navbar navbar-expand-lg navbar-light bg-light navbar-nav header__menu">
+    <button class="navbar-toggler mr-auto" style="background-color: #018599;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon header__hamburguesa"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="header-menu__ul navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./reservamidepartamento.html">Reservas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./terecomiendo.html">Te recomiendo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./promociones.html">Promociones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./linksutiles.html">Links Útiles</a>
-        </li>
-      </ul>
+    <ul class=" header-menu__ul navbar-nav m-auto">
+      <li class="nav-item active">
+      <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="./reservamidepartamento.html">Reservas</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="./terecomiendo.html">Te recomiendo</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="./promociones.html">Promociones</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="./linksutiles.html">Links Útiles</a>
+      </li>
+    </ul>
     </div>
   </nav>
 </header>
@@ -147,75 +146,227 @@
             </div>
           </div>
         </div>
-        
-        <!-- <div class="tarjeta-deptos">
+      </div>
 
-          <div class="tarjeta-deptos__carousel-depto">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./images/fotodepto1.jpg" alt="First slide" />
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center">
+              <div id="carouselExampleIndicators" class="carousel slide px-2" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/depto-moreno-1.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-2.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-3.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-4.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-5.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-6.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-7.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-8.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-moreno-9.jpg" alt="Third slide" />
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto2.jpg" alt="Second slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto3.jpg" alt="Third slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto4.jpg" alt="First slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto5.jpg" alt="Second slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto6.jpg" alt="Third slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto7.jpg" alt="First slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto8.jpg" alt="Second slide" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./images/fotodepto9.jpg" alt="Third slide" />
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Departamento Moreno</h5>
+                <p class="card-text"> Ubicado a 400 metros del Centro Cívico, ofrece todas las
+                  comodidades para una excelente estadía</p>
+                  <div class="d-flex">
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-simple--icono" src="./images/cama-doble.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-doble--icono" src="./images/cama-simple.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano">
+                      <img class="tarjeta-deptos__descripcion-icono-bano--icono" src="./images/bano.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div class="bg-white pb-3 px-2 d-flex justify-content-center">
+                <div class="tarjeta-deptos__descripcion-icono-ubicacion-boton">
+                  <a class="btn btn-info" href="./reservamidepartamento.html#depto-sanmartin" role="button">Consultar</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tarjeta-deptos__titulo">
-            <h4 class="tarjeta-deptos__titulo-depto">
-              Departamento San Martín
-            </h4>
-            <p class="tarjeta-deptos__descripcion">
-              Ubicado a 400 metros del Centro Cívico, ofrece todas las
-              comodidades para una excelente estadía
-            </p>
-            <div class="tarjeta-deptos__descripcion-icono-cama-simple">
-              <img class="tarjeta-deptos__descripcion-icono-cama-simple--icono" src="./images/cama-doble.png" alt="" />
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center">
+              <div id="carouselExampleIndicators" class="carousel slide px-2" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/depto-quaglia-1.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-2.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-3.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-4.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-5.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-6.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-7.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-8.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-quaglia-9.jpg" alt="Third slide" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tarjeta-deptos__descripcion-icono-cama-simple-texto">
-              <p>2</p>
-            </div>
-            <div class="tarjeta-deptos__descripcion-icono-cama-doble">
-              <img class="tarjeta-deptos__descripcion-icono-cama-doble--icono" src="./images/cama-simple.png" alt="" />
-            </div>
-            <div class="tarjeta-deptos__descripcion-icono-cama-doble-texto">
-              <p>2</p>
-            </div>
-            <div class="tarjeta-deptos__descripcion-icono-bano">
-              <img class="tarjeta-deptos__descripcion-icono-bano--icono" src="./images/bano.png" alt="" />
-            </div>
-            <div class="tarjeta-deptos__descripcion-icono-bano-texto">
-              <p>2</p>
-            </div>
-            <div class="tarjeta-deptos__descripcion-icono-ubicacion-boton">
-              <a class="btn btn-info" href="./reservamidepartamento.html#depto-sanmartin" role="button">Consultar</a>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Departamento Quaglia</h5>
+                <p class="card-text"> Ubicado a 400 metros del Centro Cívico, ofrece todas las
+                  comodidades para una excelente estadía</p>
+                  <div class="d-flex">
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-simple--icono" src="./images/cama-doble.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-doble--icono" src="./images/cama-simple.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano">
+                      <img class="tarjeta-deptos__descripcion-icono-bano--icono" src="./images/bano.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div class="bg-white pb-3 px-2 d-flex justify-content-center">
+                <div class="tarjeta-deptos__descripcion-icono-ubicacion-boton">
+                  <a class="btn btn-info" href="./reservamidepartamento.html#depto-sanmartin" role="button">Consultar</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 col-xs-12">
+
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center">
+              <div id="carouselExampleIndicators" class="carousel slide px-2" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/depto-mitre-1.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-2.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-3.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-4.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-5.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-6.jpg" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-7.jpg" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-8.jpg" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/depto-mitre-9.jpg" alt="Third slide" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Departamento Mitre</h5>
+                <p class="card-text"> Ubicado a 400 metros del Centro Cívico, ofrece todas las
+                  comodidades para una excelente estadía</p>
+                  <div class="d-flex">
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-simple--icono" src="./images/cama-doble.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-simple-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble mr-2">
+                      <img class="tarjeta-deptos__descripcion-icono-cama-doble--icono" src="./images/cama-simple.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-cama-doble-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano">
+                      <img class="tarjeta-deptos__descripcion-icono-bano--icono" src="./images/bano.png" alt="" />
+                    </div>
+                    <div class="tarjeta-deptos__descripcion-icono-bano-texto mr-2">
+                      <p>2</p>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div class="bg-white pb-3 px-2 d-flex justify-content-center">
+                <div class="tarjeta-deptos__descripcion-icono-ubicacion-boton">
+                  <a class="btn btn-info" href="./reservamidepartamento.html#depto-sanmartin" role="button">Consultar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 col-xs-12">
         <div class="tarjeta-deptos">
           <div class="tarjeta-deptos__carousel-depto">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -411,7 +562,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <h2 class="container titulos">Te recomiendo estos Lugares</h2>
   <section>
@@ -607,6 +758,15 @@
     crossorigin="anonymous"></script>
   <script src="jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+		$(window).scroll(function(){
+			if($('#menu').offset().top > 100){
+				$('#menu').addClass("bg-inverse")
+			} else {
+				$('#menu').removeClass("bg-inverse")
+			}
+		})
+	</script>
 </body>
 
 </html>
