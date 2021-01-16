@@ -292,8 +292,8 @@
   font-family: 'Quicksand', sans-serif; }
 
 .descripcion-reservas {
-  padding-bottom: 100px;
   font-family: 'Quicksand', sans-serif;
+  width: 100%;
   /*seccion galeria fotos*/ }
   .descripcion-reservas .descripcion-reservas__titulo-depto {
     margin-left: 60px;
@@ -301,14 +301,11 @@
     margin-top: 40px;
     color: #2d3436; }
   .descripcion-reservas .descripcion-reserva-caja {
-    display: grid;
-    grid-template-areas: "galeria-fotos texto-depto";
-    grid-template-rows: 520px;
-    grid-template-columns: 44% 55%; }
+    display: flex; }
   .descripcion-reservas .body-galeria {
     grid-area: galeria-fotos;
     position: relative;
-    width: 510px;
+    width: 40%;
     height: 510px;
     background: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -318,20 +315,22 @@
     margin-left: 40px;
     padding: 0; }
     .descripcion-reservas .body-galeria .swiper-container {
-      width: 500px;
+      width: 100%;
       height: 300px;
       margin-left: auto;
       margin-right: auto; }
     .descripcion-reservas .body-galeria .swiper-slide {
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      width: 100%; }
     .descripcion-reservas .body-galeria .gallery-top {
       height: 80%;
       width: 100%; }
     .descripcion-reservas .body-galeria .gallery-thumbs {
       height: 20%;
       box-sizing: border-box;
-      padding: 10px 0; }
+      padding: 10px 0;
+      width: 100%; }
     .descripcion-reservas .body-galeria .gallery-thumbs .swiper-slide {
       width: 25%;
       height: 100%;
@@ -397,8 +396,7 @@
       color: #2d3436; }
     .descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__texto-reserva {
       margin-left: 30px;
-      color: #2d3436;
-      text-align: justify; }
+      color: #2d3436; }
     .descripcion-reservas .descripcion-reservas__bloque-texto .descripcion-reservas__mapa-recomendacion {
       width: 500px;
       height: 490px; }
@@ -423,15 +421,13 @@
   grid-area: detalles;
   display: grid;
   grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano" "boton boton boton boton boton boton";
-  grid-template-columns: 20% 10% 10% 10% 10% 40%;
   grid-template-rows: 50% 40%; }
   .descripcion-reservas__depto-detalles .descripcion-reservas__boton-reservas {
     grid-area: boton;
     width: 150px;
     height: 40px;
     justify-self: center;
-    align-self: center;
-    margin-right: 100px; }
+    align-self: center; }
   .descripcion-reservas__depto-detalles .descripcion-reservas__depto-detalles-cama-doble {
     grid-area: icono-cama-doble;
     align-self: center;
@@ -460,18 +456,163 @@
     margin-top: 10px;
     margin-left: 10px; }
 
+@media only screen and (max-width: 1024px) {
+  .descripcion-reserva-caja {
+    display: flex !important;
+    height: 100%;
+    width: 100%; }
+    .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px; } }
+
+@media only screen and (max-width: 834px) {
+  .descripcion-reserva-caja {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    width: 100%; }
+    .descripcion-reserva-caja .descripcion-reservas__informacion-depto {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__bloque-texto {
+        height: 100%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__titulo-depto {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__texto-reserva {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-galeria {
+        margin-top: 10px; }
+        .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-galeria .descripcion-reservas__mapa-recomendacion {
+          width: 100%;
+          padding-right: 30px;
+          height: 30%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
+        align-items: center;
+        margin-top: 15px; }
+    .descripcion-reserva-caja .body-galeria {
+      width: 100%;
+      margin: 0; }
+      .descripcion-reserva-caja .body-galeria .gallery-top {
+        width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .descripcion-reserva-caja {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    width: 100%; }
+    .descripcion-reserva-caja .descripcion-reservas__informacion-depto {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__bloque-texto {
+        height: 100%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__titulo-depto {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__texto-reserva {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-galeria .descripcion-reservas__mapa-recomendacion {
+        width: 100%;
+        padding-right: 30px;
+        height: 30%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
+        align-items: center;
+        margin-top: 15px; }
+    .descripcion-reserva-caja .body-galeria {
+      width: 100%;
+      margin: 0; } }
+
 @media only screen and (max-width: 600px) {
   .descripcion-reserva-caja {
     display: flex !important;
     flex-direction: column !important;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
     .descripcion-reserva-caja .descripcion-reservas__informacion-depto {
       height: 100%;
-      width: 100%; }
-    .descripcion-reserva-caja .descripcion-reservas__mapa-galeria {
-      margin-top: 50%; }
-    .descripcion-reserva-caja .descripcion-reservas__depto-detalles {
-      margin-top: 50%; } }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__bloque-texto {
+        height: 100%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__titulo-depto {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__texto-reserva {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-recomendacion {
+        width: 100%;
+        padding-right: 30px;
+        height: 20%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
+        align-items: center;
+        margin-top: 15px; }
+    .descripcion-reserva-caja .body-galeria {
+      width: 100%;
+      margin: 0; } }
+
+@media only screen and (max-width: 414px) {
+  .descripcion-reserva-caja {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    width: 100%; }
+    .descripcion-reserva-caja .descripcion-reservas__informacion-depto {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__bloque-texto {
+        height: 100%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__titulo-depto {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__texto-reserva {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-galeria .descripcion-reservas__mapa-recomendacion {
+        width: 100%;
+        padding-right: 30px;
+        height: 20%; }
+    .descripcion-reserva-caja .body-galeria {
+      width: 100%;
+      margin: 0; } }
+
+@media only screen and (max-width: 360px) {
+  .descripcion-reserva-caja {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    width: 100%; }
+    .descripcion-reserva-caja .descripcion-reservas__informacion-depto {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__bloque-texto {
+        height: 100%; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__titulo-depto {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__texto-reserva {
+        margin-left: 0; }
+      .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__mapa-galeria .descripcion-reservas__mapa-recomendacion {
+        width: 100%;
+        padding-right: 30px;
+        height: 20%; }
+    .descripcion-reserva-caja .body-galeria {
+      width: 100%;
+      margin: 0; } }
 
 /*segunda seccion "reservas"*/
 .titulo-alquiler {
@@ -1243,7 +1384,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
 
 nav ul li a:hover {
   text-decoration: none;
@@ -1267,9 +1408,9 @@ nav ul li a:hover {
     margin-top: 16px; }
   nav ul {
     max-height: 0px;
-    background: #000; }
+    background: #263238; }
   nav.black ul {
-    background: #000; }
+    background: #263238; }
   .showing {
     max-height: 34em; }
   nav ul li {
