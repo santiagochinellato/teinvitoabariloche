@@ -69,3 +69,8 @@ var galleryThumbs = new Swiper('.gallery-thumbs',{
       swiper: galleryThumbs
     }
   });
+
+
+  let form = document.getElementById("formulario-submit").addEventListener('click', (e) => {
+    e.preventDefault()
+  })
