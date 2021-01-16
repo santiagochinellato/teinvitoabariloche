@@ -24,32 +24,23 @@
 </head>
 <header class="header">
   <img class="header__logo" class="img-responsive" src="./images/logo.png" alt="logo">
-  <nav id="menu" class="nav-menu fixed-top navbar navbar-expand-lg navbar-light bg-light navbar-nav header__menu">
-    <button class="navbar-toggler mr-auto" style="background-color: #018599;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon header__hamburguesa"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class=" header-menu__ul navbar-nav m-auto">
-      <li class="nav-item active">
-      <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="./reservamidepartamento.html">Reservas</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="./terecomiendo.html">Te recomiendo</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="./promociones.html">Promociones</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="./linksutiles.html">Links Útiles</a>
-      </li>
-    </ul>
+  <nav>
+    <div class="menu-icon">
+       <i class="fa fa-bars fa-2x"></i>
     </div>
-  </nav>
+    <div class="logo">
+    </div>
+    <div class="menu">
+       <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./reservamidepartamento.html">Reservas</a></li>
+          <li><a href="./terecomiendo.html">Te recomiendo</a></li>
+          <li><a href="./promociones.html">Promociones</a></li>
+          <li><a href="./linksutiles.html">Links Útiles</a></li>
+       </ul>
+    </div>
+ </nav>
 </header>
-
 <body>
   <section>
     <h1 class="container introduccion-index__presentacion-titulo-principal-estilo">
@@ -759,13 +750,23 @@
   <script src="jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <script>
-		$(window).scroll(function(){
-			if($('#menu').offset().top > 100){
-				$('#menu').addClass("bg-inverse")
-			} else {
-				$('#menu').removeClass("bg-inverse")
-			}
-		})
+    $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
 	</script>
 </body>
 
