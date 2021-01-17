@@ -117,7 +117,10 @@
     grid-area: titulo-depto;
     align-self: center;
     display: grid;
-    grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
+    grid-template-areas: "titulo titulo titulo titulo titulo titulo"
+ "descripcion descripcion descripcion descripcion descripcion descripcion"
+ "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto"
+ "boton boton boton boton boton boton";
     grid-template-columns: 30% 10% 20% 10% 20% 10%;
     grid-template-rows: 20% 42% 18% 20%; }
     .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__titulo-depto {
@@ -197,7 +200,8 @@
   flex-wrap: nowrap;
   justify-content: center;
   justify-content: space-evenly;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  width: 100%; }
   .panel-recomendaciones .panel-recomendaciones__texto-index {
     text-align: justify; }
   .panel-recomendaciones .panel-recomendaciones__foto-verano {
@@ -227,7 +231,8 @@
   .panel-recomendaciones .panel-recomendaciones__contenedor {
     position: relative;
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .panel-recomendaciones .panel-recomendaciones__texto-recomendacion-chico {
     width: 95%;
     height: 366px;
@@ -274,6 +279,14 @@
     border-bottom: 2px solid  #7ed6df; }
 
 /*carousel nuevo prueba*/
+@media only screen and (max-width: 360px) {
+  .panel-recomendaciones {
+    width: 100%; }
+    .panel-recomendaciones .panel-recomendaciones__contenedor {
+      width: 100%; }
+      .panel-recomendaciones .panel-recomendaciones__contenedor .panel-recomendaciones__foto-verano {
+        width: 100%; } }
+
 /*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
 /*PRIMERA SECCION*/
 .titulo-alquiler {
@@ -378,7 +391,8 @@
       opacity: 1; }
   .descripcion-reservas .descripcion-reservas__informacion-depto {
     display: grid;
-    grid-template-areas: "texto-depto texto-depto" "mapa detalles";
+    grid-template-areas: "texto-depto texto-depto"
+ "mapa detalles";
     grid-template-columns: 40% 60%;
     grid-template-rows: 65% 35%; }
   .descripcion-reservas .descripcion-reservas__bloque-texto {
@@ -420,7 +434,8 @@
 .descripcion-reservas__depto-detalles {
   grid-area: detalles;
   display: grid;
-  grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano" "boton boton boton boton boton boton";
+  grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano"
+ "boton boton boton boton boton boton";
   grid-template-rows: 50% 40%; }
   .descripcion-reservas__depto-detalles .descripcion-reservas__boton-reservas {
     grid-area: boton;
@@ -464,7 +479,10 @@
     .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
       align-items: center;
       justify-content: center;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  .casilla-formulario {
+    margin-left: 20%; } }
+
 
 @media only screen and (max-width: 834px) {
   .descripcion-reserva-caja {
@@ -498,7 +516,10 @@
       width: 100%;
       margin: 0; }
       .descripcion-reserva-caja .body-galeria .gallery-top {
-        width: 100%; } }
+        width: 100%; }
+  .casilla-formulario {
+    margin-left: 20%; } }
+
 
 @media only screen and (max-width: 768px) {
   .descripcion-reserva-caja {
@@ -528,7 +549,10 @@
         margin-top: 15px; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin-left: 15%; } }
+
 
 @media only screen and (max-width: 600px) {
   .descripcion-reserva-caja {
@@ -558,7 +582,10 @@
         margin-top: 15px; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
+
 
 @media only screen and (max-width: 414px) {
   .descripcion-reserva-caja {
@@ -585,7 +612,10 @@
         height: 20%; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
+
 
 @media only screen and (max-width: 360px) {
   .descripcion-reserva-caja {
@@ -612,14 +642,21 @@
         height: 20%; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
+
 
 /*segunda seccion "reservas"*/
 .titulo-alquiler {
   color: #2d3436; }
 
 /*seccion formulario*/
+fieldset {
+  width: 100%; }
+
 .formulario-reservas {
+  width: 100%;
   margin-bottom: 100px; }
 
 .formulario-caja {
@@ -638,7 +675,8 @@
   color: #17A2B8; }
 
 .casilla-formulario {
-  margin-left: 175px; }
+  margin-bottom: 5px;
+  margin-left: 20%; }
 
 .boton-formulario {
   color: #17A2B8 !important; }
@@ -658,8 +696,6 @@ body {
     font-size: 40px;
     border-bottom: 1px solid #a1a7aa; }
   .presentacion-recomendaciones .presentacion-recomendaciones__texto-recomendaciones {
-    margin-right: 60px;
-    margin-left: 60px;
     color: #2d3436;
     text-align: justify; }
 
@@ -701,12 +737,17 @@ body {
 .recomendaciones-naranja {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
   margin-top: 20px;
   box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  height: 100%;
   /*fotos carousel recomendaciones*/ }
   .recomendaciones-naranja .recomendaciones-naranja__titulo-recomendaciones {
     grid-area: titulo;
@@ -790,7 +831,11 @@ body {
 .recomendaciones-rojo {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -879,7 +924,11 @@ body {
 .recomendaciones-verde {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -968,7 +1017,11 @@ body {
 .recomendaciones-azul {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -1051,7 +1104,11 @@ body {
     margin-bottom: 50px; }
   .contenedor-promociones .contenedor-promociones__card {
     display: grid;
-    grid-template-areas: "imagen-card" "titulo-card" "texto-card" "texto-bases" "boton-card";
+    grid-template-areas: "imagen-card"
+ "titulo-card"
+ "texto-card"
+ "texto-bases"
+ "boton-card";
     grid-template-columns: 250px;
     grid-template-rows: 250px 30px 60px 40px 120px;
     justify-content: center;
@@ -1124,7 +1181,11 @@ section {
   .seccion-links .seccion-links__tarjeta {
     margin-top: 50px;
     display: grid;
-    grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
+    grid-template-areas: "mapa mapa"
+ "titulo titulo"
+ "icono-horario texto-horario"
+ "icono-telefono texto-telefono"
+ "icono-direccion texto-direccion";
     grid-template-columns: 25% 75%;
     grid-template-rows: 230px 60px 45px 45px 45px;
     justify-items: center;
@@ -1175,7 +1236,8 @@ section {
 
 header {
   display: grid;
-  grid-template-areas: "logo logo" "menu-1 menu-1";
+  grid-template-areas: "logo logo"
+ "menu-1 menu-1";
   grid-template-columns: 50% 50%;
   grid-template-rows: 90% 10%;
   background-image: url(../images/background-prueba.jpg);

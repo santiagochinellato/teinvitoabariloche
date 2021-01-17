@@ -263,6 +263,7 @@ $color-fuente:#2d3436;
     justify-content: center;
     justify-content: space-evenly;
     font-family: 'Quicksand', sans-serif;
+    width: 100%;
 
     .panel-recomendaciones__texto-index{
         text-align: justify;
@@ -303,6 +304,7 @@ $color-fuente:#2d3436;
         position:relative;
         display: inline-block;
         text-align: center;
+        width: 100%;
     }
     .panel-recomendaciones__texto-recomendacion-chico{
         width: 95%;
@@ -368,3 +370,15 @@ $color-fuente:#2d3436;
 
 /*carousel nuevo prueba*/
 
+@media only screen and (max-width: 360px){
+    .panel-recomendaciones{
+        width: 100%;
+        .panel-recomendaciones__contenedor{
+            width: 100%;
+            .panel-recomendaciones__foto-verano{
+                width: 100%;
+            }
+        }
+        
+    }
+}
