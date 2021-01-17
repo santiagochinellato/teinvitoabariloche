@@ -197,7 +197,8 @@
   flex-wrap: nowrap;
   justify-content: center;
   justify-content: space-evenly;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  width: 100%; }
   .panel-recomendaciones .panel-recomendaciones__texto-index {
     text-align: justify; }
   .panel-recomendaciones .panel-recomendaciones__foto-verano {
@@ -227,7 +228,8 @@
   .panel-recomendaciones .panel-recomendaciones__contenedor {
     position: relative;
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .panel-recomendaciones .panel-recomendaciones__texto-recomendacion-chico {
     width: 95%;
     height: 366px;
@@ -274,6 +276,14 @@
     border-bottom: 2px solid  #7ed6df; }
 
 /*carousel nuevo prueba*/
+@media only screen and (max-width: 360px) {
+  .panel-recomendaciones {
+    width: 100%; }
+    .panel-recomendaciones .panel-recomendaciones__contenedor {
+      width: 100%; }
+      .panel-recomendaciones .panel-recomendaciones__contenedor .panel-recomendaciones__foto-verano {
+        width: 100%; } }
+
 /*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
 /*PRIMERA SECCION*/
 .titulo-alquiler {
@@ -464,7 +474,9 @@
     .descripcion-reserva-caja .descripcion-reservas__informacion-depto .descripcion-reservas__depto-detalles {
       align-items: center;
       justify-content: center;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  .casilla-formulario {
+    margin-left: 20%; } }
 
 @media only screen and (max-width: 834px) {
   .descripcion-reserva-caja {
@@ -498,7 +510,9 @@
       width: 100%;
       margin: 0; }
       .descripcion-reserva-caja .body-galeria .gallery-top {
-        width: 100%; } }
+        width: 100%; }
+  .casilla-formulario {
+    margin-left: 20%; } }
 
 @media only screen and (max-width: 768px) {
   .descripcion-reserva-caja {
@@ -528,7 +542,9 @@
         margin-top: 15px; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin-left: 15%; } }
 
 @media only screen and (max-width: 600px) {
   .descripcion-reserva-caja {
@@ -558,7 +574,9 @@
         margin-top: 15px; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 414px) {
   .descripcion-reserva-caja {
@@ -585,7 +603,9 @@
         height: 20%; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 360px) {
   .descripcion-reserva-caja {
@@ -612,14 +632,20 @@
         height: 20%; }
     .descripcion-reserva-caja .body-galeria {
       width: 100%;
-      margin: 0; } }
+      margin: 0; }
+  .casilla-formulario {
+    margin: 0 auto; } }
 
 /*segunda seccion "reservas"*/
 .titulo-alquiler {
   color: #2d3436; }
 
 /*seccion formulario*/
+fieldset {
+  width: 100%; }
+
 .formulario-reservas {
+  width: 100%;
   margin-bottom: 100px; }
 
 .formulario-caja {
@@ -638,7 +664,8 @@
   color: #17A2B8; }
 
 .casilla-formulario {
-  margin-left: 175px; }
+  margin-bottom: 5px;
+  margin-left: 20%; }
 
 .boton-formulario {
   color: #17A2B8 !important; }
@@ -658,8 +685,6 @@ body {
     font-size: 40px;
     border-bottom: 1px solid #a1a7aa; }
   .presentacion-recomendaciones .presentacion-recomendaciones__texto-recomendaciones {
-    margin-right: 60px;
-    margin-left: 60px;
     color: #2d3436;
     text-align: justify; }
 
@@ -707,6 +732,7 @@ body {
   justify-content: center;
   margin-top: 20px;
   box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  height: 100%;
   /*fotos carousel recomendaciones*/ }
   .recomendaciones-naranja .recomendaciones-naranja__titulo-recomendaciones {
     grid-area: titulo;

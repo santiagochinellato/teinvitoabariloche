@@ -287,6 +287,9 @@
             
         }
     }
+    .casilla-formulario{
+        margin-left: 20%;
+    }
 }
 @media only screen and (max-width: 834px){
     .descripcion-reserva-caja{
@@ -332,6 +335,9 @@
             }
         }
     }
+    .casilla-formulario{
+        margin-left: 20%;
+    }
 }
 @media only screen and (max-width: 768px){
     .descripcion-reserva-caja{
@@ -373,6 +379,10 @@
             margin: 0;
         }
     }
+    .casilla-formulario{
+        margin-left: 15%;
+    }
+    
 }
 @media only screen and (max-width: 600px){
     .descripcion-reserva-caja{
@@ -413,6 +423,9 @@
             margin: 0;
         }
     }
+    .casilla-formulario{
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 414px){
@@ -450,6 +463,9 @@
             width: 100%;
             margin: 0;
         }
+    }
+    .casilla-formulario{
+        margin: 0 auto;
     }
 }
 
@@ -490,26 +506,10 @@
             margin: 0;
         }
     }
+    .casilla-formulario{
+        margin: 0 auto;
+    }
 }
-
-
-
-// @media only screen and (min-width: 900px){
-//     .descripcion-reserva-caja{
-//         display: flex !important;
-//         flex-direction: column !important;
-//         height: 100%;
-//         .descripcion-reservas__informacion-depto{
-//             height: 100%;
-//         }
-//         .descripcion-reservas__mapa-galeria{
-//             margin-top: 15%;
-//         }
-//         .descripcion-reservas__depto-detalles{
-//             margin-top: 15%;
-//         }
-//     }
-// }
 
 /*segunda seccion "reservas"*/
 
@@ -518,8 +518,11 @@ color: #2d3436;
 }
 
 /*seccion formulario*/
-
+fieldset{
+    width: 100%;
+}
 .formulario-reservas{
+    width: 100%;
     margin-bottom: 100px;
 }
 
@@ -541,7 +544,8 @@ color: #2d3436;
     color: #17A2B8 ;
 }
 .casilla-formulario{
-    margin-left: 175px;
+    margin-bottom: 5px;
+    margin-left: 20%;
 }
 
 .boton-formulario{
