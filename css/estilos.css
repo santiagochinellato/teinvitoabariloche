@@ -117,10 +117,7 @@
     grid-area: titulo-depto;
     align-self: center;
     display: grid;
-    grid-template-areas: "titulo titulo titulo titulo titulo titulo"
- "descripcion descripcion descripcion descripcion descripcion descripcion"
- "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto"
- "boton boton boton boton boton boton";
+    grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
     grid-template-columns: 30% 10% 20% 10% 20% 10%;
     grid-template-rows: 20% 42% 18% 20%; }
     .tarjeta-deptos .tarjeta-deptos__titulo .tarjeta-deptos__titulo-depto {
@@ -335,7 +332,7 @@
     .descripcion-reservas .body-galeria .swiper-slide {
       background-size: cover;
       background-position: center;
-      width: 100%; }
+      width: 481px; }
     .descripcion-reservas .body-galeria .gallery-top {
       height: 80%;
       width: 100%; }
@@ -391,8 +388,7 @@
       opacity: 1; }
   .descripcion-reservas .descripcion-reservas__informacion-depto {
     display: grid;
-    grid-template-areas: "texto-depto texto-depto"
- "mapa detalles";
+    grid-template-areas: "texto-depto texto-depto" "mapa detalles";
     grid-template-columns: 40% 60%;
     grid-template-rows: 65% 35%; }
   .descripcion-reservas .descripcion-reservas__bloque-texto {
@@ -434,8 +430,7 @@
 .descripcion-reservas__depto-detalles {
   grid-area: detalles;
   display: grid;
-  grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano"
- "boton boton boton boton boton boton";
+  grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano" "boton boton boton boton boton boton";
   grid-template-rows: 50% 40%; }
   .descripcion-reservas__depto-detalles .descripcion-reservas__boton-reservas {
     grid-area: boton;
@@ -483,7 +478,6 @@
   .casilla-formulario {
     margin-left: 20%; } }
 
-
 @media only screen and (max-width: 834px) {
   .descripcion-reserva-caja {
     display: flex !important;
@@ -520,7 +514,6 @@
   .casilla-formulario {
     margin-left: 20%; } }
 
-
 @media only screen and (max-width: 768px) {
   .descripcion-reserva-caja {
     display: flex !important;
@@ -552,7 +545,6 @@
       margin: 0; }
   .casilla-formulario {
     margin-left: 15%; } }
-
 
 @media only screen and (max-width: 600px) {
   .descripcion-reserva-caja {
@@ -586,7 +578,6 @@
   .casilla-formulario {
     margin: 0 auto; } }
 
-
 @media only screen and (max-width: 414px) {
   .descripcion-reserva-caja {
     display: flex !important;
@@ -616,7 +607,6 @@
   .casilla-formulario {
     margin: 0 auto; } }
 
-
 @media only screen and (max-width: 360px) {
   .descripcion-reserva-caja {
     display: flex !important;
@@ -645,7 +635,6 @@
       margin: 0; }
   .casilla-formulario {
     margin: 0 auto; } }
-
 
 /*segunda seccion "reservas"*/
 .titulo-alquiler {
@@ -737,11 +726,7 @@ body {
 .recomendaciones-naranja {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo"
- "foto foto foto foto"
- "subtitulo subtitulo subtitulo subtitulo"
- "texto texto texto texto"
- "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -831,11 +816,7 @@ body {
 .recomendaciones-rojo {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo"
- "foto foto foto foto"
- "subtitulo subtitulo subtitulo subtitulo"
- "texto texto texto texto"
- "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -924,11 +905,7 @@ body {
 .recomendaciones-verde {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo"
- "foto foto foto foto"
- "subtitulo subtitulo subtitulo subtitulo"
- "texto texto texto texto"
- "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -1017,11 +994,7 @@ body {
 .recomendaciones-azul {
   background-color: white;
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo"
- "foto foto foto foto"
- "subtitulo subtitulo subtitulo subtitulo"
- "texto texto texto texto"
- "mas-info icono-facebook icono-instagram icono-maps";
+  grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
   grid-template-rows: 60px 200px 50px 250px 60px;
   grid-template-columns: 40% 20% 20% 20%;
   justify-content: center;
@@ -1104,11 +1077,7 @@ body {
     margin-bottom: 50px; }
   .contenedor-promociones .contenedor-promociones__card {
     display: grid;
-    grid-template-areas: "imagen-card"
- "titulo-card"
- "texto-card"
- "texto-bases"
- "boton-card";
+    grid-template-areas: "imagen-card" "titulo-card" "texto-card" "texto-bases" "boton-card";
     grid-template-columns: 250px;
     grid-template-rows: 250px 30px 60px 40px 120px;
     justify-content: center;
@@ -1181,11 +1150,7 @@ section {
   .seccion-links .seccion-links__tarjeta {
     margin-top: 50px;
     display: grid;
-    grid-template-areas: "mapa mapa"
- "titulo titulo"
- "icono-horario texto-horario"
- "icono-telefono texto-telefono"
- "icono-direccion texto-direccion";
+    grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
     grid-template-columns: 25% 75%;
     grid-template-rows: 230px 60px 45px 45px 45px;
     justify-items: center;
@@ -1236,8 +1201,7 @@ section {
 
 header {
   display: grid;
-  grid-template-areas: "logo logo"
- "menu-1 menu-1";
+  grid-template-areas: "logo logo" "menu-1 menu-1";
   grid-template-columns: 50% 50%;
   grid-template-rows: 90% 10%;
   background-image: url(../images/background-prueba.jpg);
