@@ -258,16 +258,16 @@ $color-fuente:#2d3436;
     margin-top: 50px;
     padding-bottom: 40px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    justify-content: space-evenly;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+    // justify-content: center;
+    // justify-content: space-evenly;
     font-family: 'Quicksand', sans-serif;
-    width: 100%;
+    width: 100% !important;
 
-    .panel-recomendaciones__texto-index{
-        text-align: justify;
-    }
+    // .panel-recomendaciones__texto-index{
+    //     text-align: justify;
+    // }
 
     .panel-recomendaciones__foto-verano{
         margin-bottom: 30px;
@@ -368,17 +368,61 @@ $color-fuente:#2d3436;
 }
 
 
-/*carousel nuevo prueba*/
-
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 768px){
     .panel-recomendaciones{
-        width: 100%;
-        .panel-recomendaciones__contenedor{
-            width: 100%;
-            .panel-recomendaciones__foto-verano{
-                width: 100%;
-            }
+        .panel-recomendacion__texto-recomendacion-centrado{
+            width: 60%;
+            height: 50%;
+            color: white;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
         }
-        
+    }
+}
+
+@media only screen and (max-width: 834px){
+    .panel-recomendaciones{
+        .panel-reco__hacer{
+            width: 60%;
+            height: 50%;
+            color: white;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .panel-recomendaciones{
+        .panel-reco__lugares{
+            width: 70%;
+            height: 50%;
+            color: white;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .panel-recomendaciones{
+        .panel-reco__lugares{
+            width: 70%;
+            height: 50%;
+            color: white;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
+        }
     }
 }

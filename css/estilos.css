@@ -193,14 +193,8 @@
   margin-top: 50px;
   padding-bottom: 40px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  justify-content: space-evenly;
   font-family: 'Quicksand', sans-serif;
-  width: 100%; }
-  .panel-recomendaciones .panel-recomendaciones__texto-index {
-    text-align: justify; }
+  width: 100% !important; }
   .panel-recomendaciones .panel-recomendaciones__foto-verano {
     margin-bottom: 30px;
     width: 100%;
@@ -275,14 +269,49 @@
   .panel-recomendaciones .panel-recomendacion__titulo-invierno {
     border-bottom: 2px solid  #7ed6df; }
 
-/*carousel nuevo prueba*/
-@media only screen and (max-width: 360px) {
-  .panel-recomendaciones {
-    width: 100%; }
-    .panel-recomendaciones .panel-recomendaciones__contenedor {
-      width: 100%; }
-      .panel-recomendaciones .panel-recomendaciones__contenedor .panel-recomendaciones__foto-verano {
-        width: 100%; } }
+@media only screen and (max-width: 768px) {
+  .panel-recomendaciones .panel-recomendacion__texto-recomendacion-centrado {
+    width: 60%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s; } }
+
+@media only screen and (max-width: 834px) {
+  .panel-recomendaciones .panel-reco__hacer {
+    width: 60%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s; } }
+
+@media only screen and (max-width: 1024px) {
+  .panel-recomendaciones .panel-reco__lugares {
+    width: 70%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s; } }
+
+@media only screen and (min-width: 1024px) {
+  .panel-recomendaciones .panel-reco__lugares {
+    width: 70%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s; } }
 
 /*SEGUNDA SECCION "RESERVA MI DEPARTAMENTO"*/
 /*PRIMERA SECCION*/

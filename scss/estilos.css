@@ -75,7 +75,10 @@
       align-self: center;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo titulo titulo" "descripcion descripcion descripcion descripcion descripcion descripcion" "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto" "boton boton boton boton boton boton";
+      grid-template-areas: "titulo titulo titulo titulo titulo titulo"
+ "descripcion descripcion descripcion descripcion descripcion descripcion"
+ "icono-cama icono-cama-texto icono-cama-doble icono-cama-doble-texto icono-bano icono-bano-texto"
+ "boton boton boton boton boton boton";
   -ms-grid-columns: 30% 10% 20% 10% 20% 10%;
       grid-template-columns: 30% 10% 20% 10% 20% 10%;
   -ms-grid-rows: 20% 42% 18% 20%;
@@ -501,7 +504,8 @@
 .descripcion-reservas .descripcion-reservas__informacion-depto {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "texto-depto texto-depto" "mapa detalles";
+      grid-template-areas: "texto-depto texto-depto"
+ "mapa detalles";
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   -ms-grid-rows: 65% 35%;
@@ -573,7 +577,8 @@
   grid-area: detalles;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano" "boton boton boton boton boton boton";
+      grid-template-areas: "icono-cama-doble texto-cama-doble icono-cama-simple texto-cama-simple icono-bano texto-bano"
+ "boton boton boton boton boton boton";
   -ms-grid-columns: 20% 10% 10% 10% 10% 40%;
       grid-template-columns: 20% 10% 10% 10% 10% 40%;
   -ms-grid-rows: 50% 40%;
@@ -775,7 +780,11 @@ body {
   background-color: white;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+      grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 50px 250px 60px;
       grid-template-rows: 60px 200px 50px 250px 60px;
   -ms-grid-columns: 40% 20% 20% 20%;
@@ -918,7 +927,11 @@ body {
   background-color: white;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+      grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 50px 250px 60px;
       grid-template-rows: 60px 200px 50px 250px 60px;
   -ms-grid-columns: 40% 20% 20% 20%;
@@ -1061,7 +1074,11 @@ body {
   background-color: white;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+      grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 50px 250px 60px;
       grid-template-rows: 60px 200px 50px 250px 60px;
   -ms-grid-columns: 40% 20% 20% 20%;
@@ -1204,7 +1221,11 @@ body {
   background-color: white;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "foto foto foto foto" "subtitulo subtitulo subtitulo subtitulo" "texto texto texto texto" "mas-info icono-facebook icono-instagram icono-maps";
+      grid-template-areas: "titulo titulo titulo titulo"
+ "foto foto foto foto"
+ "subtitulo subtitulo subtitulo subtitulo"
+ "texto texto texto texto"
+ "mas-info icono-facebook icono-instagram icono-maps";
   -ms-grid-rows: 60px 200px 50px 250px 60px;
       grid-template-rows: 60px 200px 50px 250px 60px;
   -ms-grid-columns: 40% 20% 20% 20%;
@@ -1351,7 +1372,11 @@ body {
 .contenedor-promociones .contenedor-promociones__card {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "imagen-card" "titulo-card" "texto-card" "texto-bases" "boton-card";
+      grid-template-areas: "imagen-card"
+ "titulo-card"
+ "texto-card"
+ "texto-bases"
+ "boton-card";
   -ms-grid-columns: 250px;
       grid-template-columns: 250px;
   -ms-grid-rows: 250px 30px 60px 40px 120px;
@@ -1464,7 +1489,11 @@ section {
   margin-top: 50px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "mapa mapa" "titulo titulo" "icono-horario texto-horario" "icono-telefono texto-telefono" "icono-direccion texto-direccion";
+      grid-template-areas: "mapa mapa"
+ "titulo titulo"
+ "icono-horario texto-horario"
+ "icono-telefono texto-telefono"
+ "icono-direccion texto-direccion";
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
   -ms-grid-rows: 230px 60px 45px 45px 45px;
@@ -1568,7 +1597,8 @@ section {
 header {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "logo logo" "menu-1 menu-1";
+      grid-template-areas: "logo logo"
+ "menu-1 menu-1";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 90% 10%;
@@ -1843,7 +1873,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 500px;
   }
   .foto-verano {
     width: 200px;
