@@ -1,523 +1,507 @@
-
 $color: withe;
-$color-fuente:#2d3436;
+$color-fuente: #2d3436;
 
-body{
-    background: white;
+body {
+  background: white;
 }
 
-.presentacion-recomendaciones{
+.presentacion-recomendaciones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: "Quicksand", sans-serif;
+
+  .presentacion-recomendaciones__titulo-principal-recomendaciones {
     margin-top: 100px;
-    margin-bottom: 100px;
-    font-family: 'Quicksand', sans-serif;
-
-    .presentacion-recomendaciones__titulo-principal-recomendaciones{
-        margin-top: 100px;
-        margin-bottom: 110px;
-        text-align: center;
-        color: $color-fuente;
-        font-size: 40px;
-        border-bottom: 1px solid#a1a7aa;
-    }
-    .presentacion-recomendaciones__texto-recomendaciones{
-        // margin-right: 60px;
-        // margin-left: 60px;
-        color: $color-fuente;
-        text-align: justify;
-    }
+    margin-bottom: 110px;
+    text-align: center;
+    color: $color-fuente;
+    font-size: 40px;
+    border-bottom: 1px solid#a1a7aa;
+  }
+  .presentacion-recomendaciones__texto-recomendaciones {
+    // margin-right: 60px;
+    // margin-left: 60px;
+    color: $color-fuente;
+    text-align: justify;
+  }
 }
 
-.btn.focus, .btn:focus {
-    outline: 0;
+.btn.focus,
+.btn:focus {
+  outline: 0;
   box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.seccion-recomendaciones {
+  margin-bottom: 400px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.seccion-recomendacion-verano-naranja {
+  .seccion-recomendaciones-verano-naranja__titulo-acordeon {
+    background-color: #ea8685;
+    text-align: center;
   }
 
-.seccion-recomendaciones{
-    margin-bottom: 200px;
-    font-family: 'Quicksand', sans-serif;
+  .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones:hover {
+    color: white !important;
+  }
+
+  .seccion-recomendaciones-verano-naranja__espacio-descripcion {
+    background-color: $color;
+  }
+
+  .seccion-recomendaciones-verano-naranja__introduccion-seccion {
+    background-color: white;
+    color: $color-fuente;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  }
+
+  .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .seccion-recomendaciones-verano-naranja__texto-recomendaciones {
+    text-align: justify;
+  }
 }
 
-.seccion-recomendacion-verano-naranja{
-    .seccion-recomendaciones-verano-naranja__titulo-acordeon{
-        background-color:  #ea8685;
-        text-align: center;
-        
-    }
-
-    .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones{
-        text-decoration: none !important;
-        color: white;
-    }
-
-    .seccion-recomendaciones-verano-naranja__titulo-seccion-recomendaciones:hover{
-        color: white !important;
-    }
-
-    .seccion-recomendaciones-verano-naranja__espacio-descripcion{
-        background-color: $color;
-    }
-
-    .seccion-recomendaciones-verano-naranja__introduccion-seccion{
-        background-color: white ;
-        color: $color-fuente;
-        margin-bottom: 40px;
-        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
-    }
-
-    .seccion-recomendaciones-verano-naranja__subtitulo-seccion-recomendaciones{
-        margin-top: 20px;
-        text-align: center;
-    }
-    .seccion-recomendaciones-verano-naranja__texto-recomendaciones{
-        text-align: justify;
-    }
-}
-
-
-.recomendaciones-naranja{
-    background-color:  white;
-    display: grid;
-    grid-template-areas:
+.recomendaciones-naranja {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
     "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 50px 250px 60px;
-    grid-template-columns: 40% 20% 20% 20%;
-    justify-content: center;
+  grid-template-rows: 60px 200px 50px 250px 60px;
+  grid-template-columns: 40% 20% 20% 20%;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  height: 100%;
+
+  .recomendaciones-naranja__titulo-recomendaciones {
+    grid-area: titulo;
     margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    color: $color-fuente;
+  }
+
+  /*fotos carousel recomendaciones*/
+  .recomendaciones-naranja__foto-recomendaciones {
+    grid-area: foto;
+    width: auto;
+    height: 200px;
+    justify-self: center;
+  }
+  .recomendaciones-naranja__tamaño-fotos-carousel-recomendaciones {
+    width: auto;
+    height: 200px;
+  }
+
+  .recomendaciones-naranja__subtitulo-tarjeta {
+    grid-area: subtitulo;
+    text-align: center;
+    align-self: end;
+  }
+  .recomendaciones-naranja__texto-recomendaciones {
+    grid-area: texto;
+    color: $color-fuente;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+    font-size: 15px;
+    justify-self: stretch;
+  }
+  .recomendaciones-naranja__icono-facebook {
+    grid-area: icono-facebook;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-naranja__icono-instagram {
+    grid-area: icono-instagram;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-naranja__icono-maps {
+    grid-area: icono-maps;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    margin-top: 5px;
+  }
+
+  .recomendaciones-naranja__texto-masinfo {
+    grid-area: mas-info;
+    color: $color-fuente;
+    margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    font-style: oblique;
+  }
+}
+
+.seccion-recomendacion-cena-rojo {
+  .seccion-recomendacion-cena-rojo__titulo-acordeon {
+    background-color: #9b59b6;
+    text-align: center;
+  }
+
+  .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones:hover {
+    color: white !important;
+  }
+
+  .seccion-recomendacion-cena-rojo__espacio-descripcion {
+    background-color: $color;
+  }
+
+  .seccion-recomendacion-cena-rojo__introduccion-seccion {
+    background-color: white;
+    color: $color-fuente;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
-    height: 100%;
+  }
 
-    .recomendaciones-naranja__titulo-recomendaciones{
-        grid-area: titulo;
-        margin-top: 20px;
-        text-align:center;
-        justify-self: stretch;
-        color: $color-fuente;
-    }
-
-    /*fotos carousel recomendaciones*/
-    .recomendaciones-naranja__foto-recomendaciones{
-        grid-area: foto;
-        width: auto;
-        height: 200px;
-        justify-self:center;
-    }
-    .recomendaciones-naranja__tamaño-fotos-carousel-recomendaciones{
-        width: auto;
-        height: 200px;
-    }
-
-    .recomendaciones-naranja__subtitulo-tarjeta{
-        grid-area: subtitulo;
-        text-align: center;
-        align-self: end;
-    }
-    .recomendaciones-naranja__texto-recomendaciones{
-        grid-area: texto;
-        color: $color-fuente ;
-        width: auto;
-        margin:20px 20px 0px 20px;
-        text-align: justify;
-        font-size: 15px;
-        justify-self: stretch;
-    }
-    .recomendaciones-naranja__icono-facebook{
-        grid-area: icono-facebook;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-naranja__icono-instagram{
-        grid-area: icono-instagram;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-naranja__icono-maps{
-        grid-area: icono-maps;
-        width: 40px;
-        height: 40px;
-        justify-self: center;
-        margin-top: 5px;
-    }
-
-    .recomendaciones-naranja__texto-masinfo{
-        grid-area: mas-info;
-        color: $color-fuente ;
-        margin-top: 20px;
-        text-align: center;
-        justify-self: stretch;
-        font-style: oblique;
-    }
+  .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .seccion-recomendacion-cena-rojo__texto-recomendaciones {
+    text-align: justify;
+  }
 }
 
-.seccion-recomendacion-cena-rojo{
-
-    .seccion-recomendacion-cena-rojo__titulo-acordeon{
-        background-color:  #9b59b6;
-        text-align: center;
-    }
-
-    .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones{
-        text-decoration: none !important;
-        color: white;
-    }
-
-    .seccion-recomendacion-cena-rojo__titulo-seccion-recomendaciones:hover{
-        color: white !important;
-    }
-
-    .seccion-recomendacion-cena-rojo__espacio-descripcion{
-        background-color: $color;
-    }
-
-    .seccion-recomendacion-cena-rojo__introduccion-seccion{
-        background-color:white;
-        color: $color-fuente;
-        margin-bottom: 40px;
-        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
-    }
-
-    .seccion-recomendacion-cena-rojo__subtitulo-seccion-recomendaciones{
-        margin-top: 20px;
-        text-align: center;
-    }
-    .seccion-recomendacion-cena-rojo__texto-recomendaciones{
-        text-align: justify;
-    }
-}
-
-.recomendaciones-rojo{
-    background-color:  white;
-    display: grid;
-    grid-template-areas:
+.recomendaciones-rojo {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
     "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 50px 250px 60px;
-    grid-template-columns: 40% 20% 20% 20%;
-    justify-content: center;
+  grid-template-rows: 60px 200px 50px 250px 60px;
+  grid-template-columns: 40% 20% 20% 20%;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+
+  .recomendaciones-rojo__titulo-recomendaciones {
+    grid-area: titulo;
     margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    color: $color-fuente;
+  }
+
+  /*fotos carousel recomendaciones*/
+  .recomendaciones-rojo__foto-recomendaciones {
+    grid-area: foto;
+    width: auto;
+    height: 200px;
+    justify-self: center;
+  }
+  .recomendaciones-rojo__tamaño-fotos-carousel-recomendaciones {
+    width: 290px;
+    height: 200px;
+  }
+
+  .recomendaciones-rojo__subtitulo-tarjeta {
+    grid-area: subtitulo;
+    text-align: center;
+    align-self: end;
+  }
+
+  .recomendaciones-rojo__texto-recomendaciones {
+    grid-area: texto;
+    color: $color-fuente;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+    font-size: 15px;
+    justify-self: stretch;
+  }
+  .recomendaciones-rojo__icono-facebook {
+    grid-area: icono-facebook;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-rojo__icono-instagram {
+    grid-area: icono-instagram;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-rojo__icono-maps {
+    grid-area: icono-maps;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    margin-top: 5px;
+  }
+
+  .recomendaciones-rojo__texto-masinfo {
+    grid-area: mas-info;
+    color: $color-fuente;
+    margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    font-style: oblique;
+  }
+}
+
+.seccion-recomendacion-lugares-verde {
+  .seccion-recomendacion-lugares-verde__titulo-acordeon {
+    background-color: #badc58;
+    text-align: center;
+  }
+
+  .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones:hover {
+    color: white !important;
+  }
+
+  .seccion-recomendacion-lugares-verde__espacio-descripcion {
+    background-color: $color;
+  }
+
+  .seccion-recomendacion-lugares-verde__introduccion-seccion {
+    background-color: white;
+    color: $color-fuente;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  }
 
-    .recomendaciones-rojo__titulo-recomendaciones{
-        grid-area: titulo;
-        margin-top: 20px;
-        text-align:center;
-        justify-self: stretch;
-        color: $color-fuente;
-    }
-
-    /*fotos carousel recomendaciones*/
-    .recomendaciones-rojo__foto-recomendaciones{
-        grid-area: foto;
-        width: auto;
-        height: 200px;
-        justify-self:center;
-    }
-    .recomendaciones-rojo__tamaño-fotos-carousel-recomendaciones{
-        width: 290px;
-        height: 200px;
-    }
-
-    .recomendaciones-rojo__subtitulo-tarjeta{
-        grid-area: subtitulo;
-        text-align: center;
-        align-self: end;
-    }
-
-    .recomendaciones-rojo__texto-recomendaciones{
-        grid-area: texto;
-        color: $color-fuente ;
-        width: auto;
-        margin:20px 20px 0px 20px;
-        text-align: justify;
-        font-size: 15px;
-        justify-self: stretch;
-    }
-    .recomendaciones-rojo__icono-facebook{
-        grid-area: icono-facebook;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-rojo__icono-instagram{
-        grid-area: icono-instagram;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-rojo__icono-maps{
-        grid-area: icono-maps;
-        width: 40px;
-        height: 40px;
-        justify-self: center;
-        margin-top: 5px;
-    }
-
-    .recomendaciones-rojo__texto-masinfo{
-        grid-area: mas-info;
-        color: $color-fuente ;
-        margin-top: 20px;
-        text-align: center;
-        justify-self: stretch;
-        font-style: oblique;
-    }
+  .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .seccion-recomendacion-lugares-verde__texto-recomendaciones {
+    text-align: justify;
+  }
 }
 
-
-.seccion-recomendacion-lugares-verde{
-
-    .seccion-recomendacion-lugares-verde__titulo-acordeon{
-        background-color: #badc58;
-        text-align: center;
-    }
-
-    .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones{
-        text-decoration: none !important;
-        color: white;
-    }
-
-    .seccion-recomendacion-lugares-verde__titulo-seccion-recomendaciones:hover{
-        color: white !important;
-    }
-
-    .seccion-recomendacion-lugares-verde__espacio-descripcion{
-        background-color: $color;
-    }
-
-    .seccion-recomendacion-lugares-verde__introduccion-seccion{
-        background-color: white;
-        color: $color-fuente;
-        margin-bottom: 40px;
-        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
-    }
-
-    .seccion-recomendacion-lugares-verde__subtitulo-seccion-recomendaciones{
-        margin-top: 20px;
-        text-align: center;
-    }
-    .seccion-recomendacion-lugares-verde__texto-recomendaciones{
-        text-align: justify;
-    }
-}
-
-.recomendaciones-verde{
-    background-color:  white;
-    display: grid;
-    grid-template-areas:
+.recomendaciones-verde {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
     "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 50px 250px 60px;
-    grid-template-columns: 40% 20% 20% 20%;
-    justify-content: center;
+  grid-template-rows: 60px 200px 50px 250px 60px;
+  grid-template-columns: 40% 20% 20% 20%;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+
+  .recomendaciones-verde__titulo-recomendaciones {
+    grid-area: titulo;
     margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    color: $color-fuente;
+  }
+
+  /*fotos carousel recomendaciones*/
+  .recomendaciones-verde__foto-recomendaciones {
+    grid-area: foto;
+    width: auto;
+    height: 200px;
+    justify-self: center;
+  }
+  .recomendaciones-verde__tamaño-fotos-carousel-recomendaciones {
+    width: 290px;
+    height: 200px;
+  }
+
+  .recomendaciones-verde__subtitulo-tarjeta {
+    grid-area: subtitulo;
+    text-align: center;
+    align-self: end;
+  }
+
+  .recomendaciones-verde__texto-recomendaciones {
+    grid-area: texto;
+    color: $color-fuente;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+    font-size: 15px;
+    justify-self: stretch;
+  }
+  .recomendaciones-verde__icono-facebook {
+    grid-area: icono-facebook;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-verde__icono-instagram {
+    grid-area: icono-instagram;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-verde__icono-maps {
+    grid-area: icono-maps;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    margin-top: 5px;
+  }
+
+  .recomendaciones-verde__texto-masinfo {
+    grid-area: mas-info;
+    color: $color-fuente;
+    margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    font-style: oblique;
+  }
+}
+
+.seccion-recomendacion-invierno-azul {
+  .seccion-recomendacion-invierno-azul__titulo-acordeon {
+    background-color: #7ed6df;
+    text-align: center;
+  }
+
+  .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones:hover {
+    color: white !important;
+  }
+
+  .seccion-recomendacion-invierno-azul__espacio-descripcion {
+    background-color: $color;
+  }
+
+  .seccion-recomendacion-invierno-azul__introduccion-seccion {
+    background-color: white;
+    color: $color-fuente;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  }
 
-    .recomendaciones-verde__titulo-recomendaciones{
-        grid-area: titulo;
-        margin-top: 20px;
-        text-align:center;
-        justify-self: stretch;
-        color: $color-fuente;
-    }
+  .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-    /*fotos carousel recomendaciones*/
-    .recomendaciones-verde__foto-recomendaciones{
-        grid-area: foto;
-        width: auto;
-        height: 200px;
-        justify-self:center;
-    }
-    .recomendaciones-verde__tamaño-fotos-carousel-recomendaciones{
-        width: 290px;
-        height: 200px;
-    }
-
-    .recomendaciones-verde__subtitulo-tarjeta{
-        grid-area: subtitulo;
-        text-align: center;
-        align-self: end;
-    }
-
-    .recomendaciones-verde__texto-recomendaciones{
-        grid-area: texto;
-        color: $color-fuente ;
-        width: auto;
-        margin:20px 20px 0px 20px;
-        text-align: justify;
-        font-size: 15px;
-        justify-self: stretch;
-    }
-    .recomendaciones-verde__icono-facebook{
-        grid-area: icono-facebook;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-verde__icono-instagram{
-        grid-area: icono-instagram;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-verde__icono-maps{
-        grid-area: icono-maps;
-        width: 40px;
-        height: 40px;
-        justify-self: center;
-        margin-top: 5px;
-    }
-
-    .recomendaciones-verde__texto-masinfo{
-        grid-area: mas-info;
-        color: $color-fuente ;
-        margin-top: 20px;
-        text-align: center;
-        justify-self: stretch;
-        font-style: oblique;
-    }
+  .seccion-recomendacion-invierno-azul__texto-recomendaciones {
+    text-align: justify;
+  }
 }
 
-
-
-.seccion-recomendacion-invierno-azul{
-
-    .seccion-recomendacion-invierno-azul__titulo-acordeon{
-        background-color:  #7ed6df;
-        text-align: center;
-    }
-
-    .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones{
-        text-decoration: none !important;
-        color: white;
-    }
-
-    .seccion-recomendacion-invierno-azul__titulo-seccion-recomendaciones:hover{
-        color: white !important;
-    }
-
-    .seccion-recomendacion-invierno-azul__espacio-descripcion{
-        background-color: $color;
-    }
-
-    .seccion-recomendacion-invierno-azul__introduccion-seccion{
-        background-color: white;
-        color: $color-fuente;
-        margin-bottom: 40px;
-        box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
-    }
-
-    .seccion-recomendacion-invierno-azul__subtitulo-seccion-recomendaciones{
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .seccion-recomendacion-invierno-azul__texto-recomendaciones{
-        text-align: justify;
-    }
-}
-
-.recomendaciones-azul{
-    background-color:  white;
-    display: grid;
-    grid-template-areas:
+.recomendaciones-azul {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
     "titulo titulo titulo titulo"
     "foto foto foto foto"
     "subtitulo subtitulo subtitulo subtitulo"
     "texto texto texto texto"
     "mas-info icono-facebook icono-instagram icono-maps";
-    grid-template-rows: 60px 200px 50px 250px 60px;
-    grid-template-columns: 40% 20% 20% 20%;
-    justify-content: center;
+  grid-template-rows: 60px 200px 50px 250px 60px;
+  grid-template-columns: 40% 20% 20% 20%;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+
+  .recomendaciones-azul__titulo-recomendaciones {
+    grid-area: titulo;
     margin-top: 20px;
-    box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+    text-align: center;
+    justify-self: stretch;
+    color: $color-fuente;
+  }
 
-    .recomendaciones-azul__titulo-recomendaciones{
-        grid-area: titulo;
-        margin-top: 20px;
-        text-align:center;
-        justify-self: stretch;
-        color: $color-fuente;
-    }
+  /*fotos carousel recomendaciones*/
+  .recomendaciones-azul__foto-recomendaciones {
+    grid-area: foto;
+    width: auto;
+    height: 200px;
+    justify-self: center;
+  }
+  .recomendaciones-azul__tamaño-fotos-carousel-recomendaciones {
+    width: 290px;
+    height: 200px;
+  }
 
-    /*fotos carousel recomendaciones*/
-    .recomendaciones-azul__foto-recomendaciones{
-        grid-area: foto;
-        width: auto;
-        height: 200px;
-        justify-self:center;
-    }
-    .recomendaciones-azul__tamaño-fotos-carousel-recomendaciones{
-        width: 290px;
-        height: 200px;
-    }
+  .recomendaciones-azul__subtitulo-tarjeta {
+    grid-area: subtitulo;
+    text-align: center;
+    align-self: end;
+  }
 
-    .recomendaciones-azul__subtitulo-tarjeta{
-        grid-area: subtitulo;
-        text-align: center;
-        align-self: end;
-    }
+  .recomendaciones-azul__texto-recomendaciones {
+    grid-area: texto;
+    color: $color-fuente;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+    font-size: 15px;
+    justify-self: stretch;
+  }
+  .recomendaciones-azul__icono-facebook {
+    grid-area: icono-facebook;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-azul__icono-instagram {
+    grid-area: icono-instagram;
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  .recomendaciones-azul__icono-maps {
+    grid-area: icono-maps;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    margin-top: 5px;
+  }
 
-    .recomendaciones-azul__texto-recomendaciones{
-        grid-area: texto;
-        color: $color-fuente ;
-        width: auto;
-        margin:20px 20px 0px 20px;
-        text-align: justify;
-        font-size: 15px;
-        justify-self: stretch;
-    }
-    .recomendaciones-azul__icono-facebook{
-        grid-area: icono-facebook;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-azul__icono-instagram{
-        grid-area: icono-instagram;
-        width: 30px;
-        height: 30px;
-        justify-self: center;
-        margin-top: 10px;
-
-    }
-    .recomendaciones-azul__icono-maps{
-        grid-area: icono-maps;
-        width: 40px;
-        height: 40px;
-        justify-self: center;
-        margin-top: 5px;
-    }
-
-    .recomendaciones-azul__texto-masinfo{
-        grid-area: mas-info;
-        color: $color-fuente ;
-        margin-top: 20px;
-        text-align: center;
-        justify-self: stretch;
-        font-style: oblique;
-    }
+  .recomendaciones-azul__texto-masinfo {
+    grid-area: mas-info;
+    color: $color-fuente;
+    margin-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    font-style: oblique;
+  }
 }
